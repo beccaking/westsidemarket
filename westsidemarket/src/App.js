@@ -1,4 +1,5 @@
 import React from 'react';
+import Vendor from './components/Vendor.js';
 
 let baseUrl = 'https://westsidemarket-api.herokuapp.com';
 
@@ -8,8 +9,52 @@ class App extends React.Component {
     this.state = {
       view: 'home',
       comments: [],
-      vendors: []
+      vendors: [],
+      user: 'Becca'
     }
+  }
+  handleUpdate = (updateData) => {
+    fetch(`${baseUrl}/comments/${updateData.id}`, {
+      body: JSON.stringify(updateData),
+      method: 'PUT',
+      headers: {
+        'Accept' : 'applications/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    }).then(updatedComment => {
+      this.fetchComments()
+    }).catch(error=>console.log(error))
+  }
+  handleDelete = (id) => {
+    fetch(`${baseUrl}/comments/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'applicatin/json'
+      }
+    }).then(json => {
+      this.setState(prevState => {
+        const comments = prevState.comments.filter(comment=> comment.id !== id)
+        return {comments}
+      })
+    }).catch(error=> console.log(error))
+  }
+  handleCreate = (comment) => {
+    fetch(`${baseUrl}/comments`, {
+      body: JSON.stringify(comment),
+      method: 'POST',
+      headers: {
+        'Accept' : 'applications/json, text/plain, */*',
+        'Content-Type':'application/json'
+      }
+    }).then(created => {
+      return created.json()
+    }).then(jsonedComment => {
+      this.setState(prevState => {
+        prevState.comments = jsonedComment
+        return { comments: prevState.comments }
+      })
+    }).catch(error=>console.log(error))
   }
   fetchMarket = () => {
     fetch(`${baseUrl}/market`)
@@ -18,8 +63,16 @@ class App extends React.Component {
       this.setState({vendors:jData})
     }).catch(error => console.log(error))
   }
+  fetchComments = () => {
+    fetch(`${baseUrl}/comments`)
+    .then(data => data.json())
+    .then(jData => {
+      this.setState({comments:jData})
+    }).catch(error => console.log(error))
+  }
   componentDidMount(){
     this.fetchMarket()
+    this.fetchComments()
   }
   render(){
     return(
@@ -27,11 +80,7 @@ class App extends React.Component {
         <h1>My Marketplace: A Guide to the West Side Market</h1>
         {
           this.state.vendors.map((vendor, index) => (
-            <div key={index} className='vendor'>
-              <h2>{vendor.name}</h2>
-              <img src={vendor.image} alt={vendor.image}/>
-              <h4>{vendor.description}</h4>
-            </div>
+            <Vendor user={this.state.user} vendor={vendor} key={index} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
           ))
         }
       </div>
