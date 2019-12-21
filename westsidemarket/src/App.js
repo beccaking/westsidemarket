@@ -13,6 +13,18 @@ class App extends React.Component {
       user: 'Becca'
     }
   }
+  handleUpdate = (updateData) => {
+    fetch(`${baseUrl}/comments/${updateData.id}`, {
+      body: JSON.stringify(updateData),
+      method: 'PUT',
+      headers: {
+        'Accept' : 'applications/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    }).then(updatedComment => {
+      this.fetchComments()
+    }).catch(error=>console.log(error))
+  }
   handleDelete = (id) => {
     fetch(`${baseUrl}/comments/${id}`, {
       method: 'DELETE',
@@ -68,7 +80,7 @@ class App extends React.Component {
         <h1>My Marketplace: A Guide to the West Side Market</h1>
         {
           this.state.vendors.map((vendor, index) => (
-            <Vendor user={this.state.user} vendor={vendor} key={index} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete}/>
+            <Vendor user={this.state.user} vendor={vendor} key={index} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
           ))
         }
       </div>
