@@ -13,6 +13,20 @@ class App extends React.Component {
       user: 'Becca'
     }
   }
+  handleDelete = (id) => {
+    fetch(`${baseUrl}/comments/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'applicatin/json'
+      }
+    }).then(json => {
+      this.setState(prevState => {
+        const comments = prevState.comments.filter(comment=> comment.id !== id)
+        return {comments}
+      })
+    }).catch(error=> console.log(error))
+  }
   handleCreate = (comment) => {
     fetch(`${baseUrl}/comments`, {
       body: JSON.stringify(comment),
@@ -54,7 +68,7 @@ class App extends React.Component {
         <h1>My Marketplace: A Guide to the West Side Market</h1>
         {
           this.state.vendors.map((vendor, index) => (
-            <Vendor user={this.state.user} vendor={vendor} key={index} comments={this.state.comments} handleCreate={this.handleCreate}/>
+            <Vendor user={this.state.user} vendor={vendor} key={index} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete}/>
           ))
         }
       </div>

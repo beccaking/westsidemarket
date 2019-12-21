@@ -21,7 +21,7 @@ class Vendor extends React.Component {
           <h4>Comments</h4>
           {
             comments.map((comment, index) => (
-              <Comment comment={comment} key={index}/>
+              <Comment user={this.props.user} comment={comment} key={index} handleDelete={this.props.handleDelete}/>
             ))
           }
           <Form user={this.props.user} vendor={this.props.vendor} handleCreate={this.props.handleCreate}/>

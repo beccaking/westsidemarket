@@ -7,6 +7,13 @@ class Comment extends React.Component{
         <h4>{this.props.comment.username}</h4>
         <span>{this.props.comment.commentdate}</span>
         <p>{this.props.comment.content}</p>
+        {
+          this.props.comment.username === this.props.user
+          ? <div className='editdelete'>
+              <button onClick={()=>{this.props.handleDelete(this.props.comment.id)}}>Delete</button>
+            </div>
+          : null
+        }
       </div>
     )
   }
