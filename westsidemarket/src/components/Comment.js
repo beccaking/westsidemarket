@@ -35,9 +35,10 @@ class Comment extends React.Component{
     })
   }
   render(){
+    let date = this.props.comment.commentdate.substring(0,9)
     return(
       <div className='comment'>
-        <span><span className='name'>{this.props.comment.username}</span> {this.props.comment.commentdate}</span>
+        <span>{date}</span>
         <p>{this.props.comment.content}</p>
         {
           this.props.comment.username === this.props.user

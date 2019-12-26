@@ -56,10 +56,17 @@ body {
 }
 
 .map {
-  width: 500px;
+  width: 900px;
   border: 1px solid black;
 }
 
+.mymap {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
