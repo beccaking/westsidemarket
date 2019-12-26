@@ -1,3 +1,7 @@
+.vendortitle:hover {
+  cursor: pointer;
+}
+
 .signindirect {
   font-style: italic;
 }

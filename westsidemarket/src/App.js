@@ -12,7 +12,7 @@ class App extends React.Component {
       view: 'home',
       comments: [],
       vendors: [],
-      user: ''
+      user: 'Becca'
     }
   }
   handleUpdate = (updateData) => {
@@ -52,12 +52,11 @@ class App extends React.Component {
     }).then(created => {
       return created.json()
     }).then(jsonedUsername => {
-      this.setState(prevState => {
-        prevState.user = jsonedUsername
-        return { user: prevState.user}
+      this.setState({
+        user: jsonedUsername
       })
     }).catch(error => console.log(error))
-    console.log(userInfo);
+    console.log(this.state);
   }
   handleCreate = (comment) => {
     fetch(`${baseUrl}/comments`, {
@@ -90,9 +89,17 @@ class App extends React.Component {
       this.setState({comments:jData})
     }).catch(error => console.log(error))
   }
+  fetchSession = () => {
+    fetch(`${baseUrl}/sessions`)
+    .then(data => data.json())
+    .then(jData => {
+      this.setState({user: jData})
+    }).catch(error=>console.log(error))
+  }
   componentDidMount(){
     this.fetchMarket()
     this.fetchComments()
+    this.fetchSession()
   }
   render(){
     return(
