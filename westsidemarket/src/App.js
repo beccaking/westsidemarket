@@ -12,7 +12,7 @@ class App extends React.Component {
       view: 'home',
       comments: [],
       vendors: [],
-      user: null
+      user: ''
     }
   }
   handleUpdate = (updateData) => {
@@ -40,6 +40,24 @@ class App extends React.Component {
         return {comments}
       })
     }).catch(error=> console.log(error))
+  }
+  handleSignup = (userInfo) => {
+    fetch(`${baseUrl}/users`, {
+      body: JSON.stringify(userInfo),
+      method: 'POST',
+      headers: {
+        'Accept' : 'applications/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    }).then(created => {
+      return created.json()
+    }).then(jsonedUsername => {
+      this.setState(prevState => {
+        prevState.user = jsonedUsername
+        return { user: prevState.user}
+      })
+    }).catch(error => console.log(error))
+    console.log(userInfo);
   }
   handleCreate = (comment) => {
     fetch(`${baseUrl}/comments`, {
@@ -83,8 +101,8 @@ class App extends React.Component {
         {
           this.state.user
           ? null
-          : <div class='signuplogin'>
-              <Signup /><Login />
+          : <div className='signuplogin'>
+              <Signup handleSignup={this.handleSignup}/><Login />
             </div>
         }
         {
