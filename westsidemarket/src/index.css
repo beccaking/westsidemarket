@@ -9,6 +9,13 @@ body {
   background: #F7F2E0;
 }
 
+.icon {
+  padding-left: 10px;
+  position: relative;
+  top: 4px;
+  width: 25px;
+}
+
 .commentsection {
   text-align: left;
   margin: 50px;
