@@ -1,5 +1,7 @@
 import React from 'react';
 import Vendor from './components/Vendor.js';
+import Signup from './components/Signup.js';
+import Login from './components/Login.js';
 
 let baseUrl = 'https://westsidemarket-api.herokuapp.com';
 
@@ -10,7 +12,7 @@ class App extends React.Component {
       view: 'home',
       comments: [],
       vendors: [],
-      user: 'Becca'
+      user: null
     }
   }
   handleUpdate = (updateData) => {
@@ -30,7 +32,7 @@ class App extends React.Component {
       method: 'DELETE',
       headers: {
         'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'applicatin/json'
+        'Content-Type': 'application/json'
       }
     }).then(json => {
       this.setState(prevState => {
@@ -78,6 +80,13 @@ class App extends React.Component {
     return(
       <div id='container'>
         <h1>My Marketplace: A Guide to the West Side Market</h1>
+        {
+          this.state.user
+          ? null
+          : <div class='signuplogin'>
+              <Signup /><Login />
+            </div>
+        }
         {
           this.state.vendors.map((vendor, index) => (
             <Vendor user={this.state.user} vendor={vendor} key={index} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>

@@ -1,3 +1,16 @@
+.signindirect {
+  font-style: italic;
+}
+
+.signuplogin {
+  display: flex;
+  flex-direction: row;
+}
+
+#signup, #login {
+  margin-right: 80px;
+}
+
 img {
   width: 200px;
 }
