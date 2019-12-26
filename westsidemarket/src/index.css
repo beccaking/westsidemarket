@@ -1,14 +1,78 @@
-img {
+body {
+  background: url('http://www.civicartsproject.com/wp-content/uploads/Ohio_City_Cleveland_Ohio_CAPAHZ0153.jpg');
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+  background: #F7F2E0;
+}
+
+.icon {
+  padding-left: 10px;
+  position: relative;
+  top: 4px;
+  width: 25px;
+}
+
+.commentsection {
+  text-align: left;
+  margin: 50px;
+}
+
+.comments {
+  text-decoration: underline;
+}
+
+.comment {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 15px;
+  width: 880px;
+}
+
+.commentbox {
+  width: 880px;
+  padding: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.vendortitle:hover {
+  cursor: pointer;
+}
+
+.signindirect {
+  font-style: italic;
+}
+
+.signuplogin {
+  display: flex;
+  flex-direction: row;
+}
+
+#signup, #login {
+  margin-right: 80px;
+}
+
+.vendorimg {
   width: 200px;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.map {
+  width: 900px;
+  border: 1px solid black;
+}
+
+.mymap {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  border: 2px solid black;
 }
 
 code {
