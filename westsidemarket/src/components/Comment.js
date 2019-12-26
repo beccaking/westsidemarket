@@ -37,8 +37,7 @@ class Comment extends React.Component{
   render(){
     return(
       <div className='comment'>
-        <h4>{this.props.comment.username}</h4>
-        <span>{this.props.comment.commentdate}</span>
+        <span><span className='name'>{this.props.comment.username}</span> {this.props.comment.commentdate}</span>
         <p>{this.props.comment.content}</p>
         {
           this.props.comment.username === this.props.user

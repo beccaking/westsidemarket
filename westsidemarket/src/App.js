@@ -105,6 +105,7 @@ class App extends React.Component {
     return(
       <div id='container'>
         <h1>My Marketplace: A Guide to the West Side Market</h1>
+        <img className='map' src='https://i.imgur.com/fC6YP1U.png'/>
         {
           this.state.user
           ? null
