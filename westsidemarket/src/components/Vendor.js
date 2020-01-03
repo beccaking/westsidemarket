@@ -27,8 +27,8 @@ class Vendor extends React.Component {
         <h2 className='vendortitle'><span onClick={()=>{this.show()}}>{this.props.vendor.name}</span>
         {
           this.state.favorite
-          ? <img className='icon' onClick={()=>{this.favorite()}} src="https://img.icons8.com/ios-glyphs/30/000000/star.png"/>
-          : <img className='icon' onClick={()=>{this.favorite()}} src="https://img.icons8.com/metro/26/000000/star.png"/>
+          ? <img className='icon' alt='favoritestar' onClick={()=>{this.favorite()}} src="https://img.icons8.com/ios-glyphs/30/000000/star.png"/>
+          : <img className='icon' alt='favoritestar' onClick={()=>{this.favorite()}} src="https://img.icons8.com/metro/26/000000/star.png"/>
         }
         </h2>
         {

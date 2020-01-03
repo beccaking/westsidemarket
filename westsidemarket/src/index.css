@@ -1,3 +1,54 @@
+#interactive {
+  border: 1px solid black;
+  height: 600px;
+  width: 800px;
+  margin: 10px auto;
+}
+
+#main-floor {
+  border: 1px solid black;
+  height: 60%;
+  width: 70%;
+  margin: 40px;
+  position: relative;
+  bottom: 310px;
+}
+#lorain {
+  z-index: 1;
+  font-family: arial;
+  color: brown;
+  position: relative;
+  bottom: 355px;
+  right: 15%;
+}
+#w25th {
+  z-index: 1;
+  font-family: arial;
+  color: brown;
+  position: relative;
+  right: 47%;
+  bottom: 500px;
+  transform: rotate(-90deg);
+}
+
+#produce-north {
+  border: 1px solid black;
+  width: 76%;
+  height: 17%;
+  position: relative;
+  top: 40px;
+  right: -10%;
+}
+
+#produce-east {
+  border: 1px solid black;
+  width: 15%;
+  height: 60%;
+  position: relative;
+  top: 6.5%;
+  left: 80%;
+}
+
 body {
   background: url('http://www.civicartsproject.com/wp-content/uploads/Ohio_City_Cleveland_Ohio_CAPAHZ0153.jpg');
 }
