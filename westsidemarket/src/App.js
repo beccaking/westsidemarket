@@ -172,7 +172,36 @@ class App extends React.Component {
               <div className='station right twentythree'></div>
             </div>
           </div>
-          <div id='produce-east'></div>
+          <div id='produce-east'>
+            <div id='left-row'>
+              <div className='stand top twentyfour'>Basketeria Produce</div>
+              <div className='stand mid twentyfour'></div>
+              <div className='stand bottom twentyfour'></div>
+              <div className='stand twentyfive'>Dave's Produce</div>
+              <div className='stand top twentysix'>A&J Produce</div>
+              <div className='stand bottom twentysix'></div>
+              <div className='stand twentyseven'>Fritz's Produce</div>
+              <div className='stand twentyeight'>That's Nuts</div>
+              <div className='stand top'></div>
+              <div className='stand bottom'></div>
+              <div className='stand top twentynine'>Rooted in Cleveland</div>
+              <div className='stand bottom twentynine'></div>
+            </div>
+            <div id='right-row'>
+              <div className='stand top thirty'>Greg's Produce</div>
+              <div className='stand bottom thirty'></div>
+              <div className='stand top thirtyone'>Decaro's Produce</div>
+              <div className='stand bottom thirtyone'></div>
+              <div className='stand thirtytwo'>Ohio City Flowers</div>
+              <div className='stand'></div>
+              <div className='stand thirtythree'>Jorgensen's Apiary</div>
+              <div className='stand thirtyfour'>Maple Valley Sugarbush</div>
+              <div className='stand top'></div>
+              <div className='stand bottom'></div>
+              <div className='stand'></div>
+              <div className='stand thirtyfive'>Paradise Flowers</div>
+            </div>
+          </div>
           <div id='main-floor'>
           </div>
           <div id='w25th'>WEST 25TH</div>

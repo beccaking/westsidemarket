@@ -1,8 +1,12 @@
 #interactive {
-  border: 1px solid black;
+  border: 3px solid black;
   height: 600px;
   width: 1000px;
   margin: 10px auto;
+}
+
+.station, .stand:hover {
+  cursor: pointer;
 }
 
 #main-floor {
@@ -32,14 +36,13 @@
 }
 
 #produce-north {
-  border: 1px solid black;
+  border: 2px solid black;
   width: 80%;
   height: 20%;
   position: relative;
   top: 40px;
   right: -5%;
 }
-
 #top-row {
   border: 1px solid black;
   border-bottom: none;
@@ -48,7 +51,6 @@
   position: relative;
   display: flex;
 }
-
 .station {
   width: 3.6%;
   flex-direction: row;
@@ -57,7 +59,6 @@
   font-size: 10px;
   padding: 2px;
 }
-
 .left {
   border-right: none;
 }
@@ -88,20 +89,51 @@
 }
 
 #produce-east {
-  border: 1px solid black;
+  border: 2px solid black;
   width: 15%;
   height: 60%;
   position: relative;
   top: 6.5%;
   left: 80%;
 }
+#left-row {
+  width: 44%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+#right-row {
+  width: 44%;
+  height: 99.7%;
+  border: 1px solid black;
+  position: relative;
+  bottom: 101%;
+  left: 55%;
+}
+.stand {
+  height: 8%;
+  font-family: arial;
+  font-size: 10px;
+  border: 1px solid black;
+}
+.top {
+  border-bottom: none;
+}
+.bottom {
+  border-top: none;
+}
+.mid {
+  border-top: none;
+  border-bottom: none;
+}
 
 body {
   background: url('http://www.civicartsproject.com/wp-content/uploads/Ohio_City_Cleveland_Ohio_CAPAHZ0153.jpg');
+  background-size: cover;
 }
 
 #container {
-  margin: 0 auto;
+  margin: 100px auto;
   max-width: 1200px;
   text-align: center;
   background: #F7F2E0;
@@ -158,19 +190,6 @@ body {
 
 .vendorimg {
   width: 200px;
-}
-
-.map {
-  width: 900px;
-  border: 1px solid black;
-}
-
-.mymap {
-  display: grid;
-  width: 800px;
-  height: 600px;
-  margin: 0 auto;
-  border: 2px solid black;
 }
 
 code {
