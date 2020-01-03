@@ -138,7 +138,39 @@ class App extends React.Component {
               <div className='station middle thirteen'></div>
               <div className='station right thirteen'></div>
             </div>
-            <div id='bottom-row'></div>
+            <div id='bottom-row'>
+              <div className='station left one'>Marina's Produce</div>
+              <div className='station right one'></div>
+              <div className='station fourteen'><div className='sideways'>Mark's Produce</div></div>
+              <div className='doorway'></div>
+              <div className='station fifteen'><div className='sideways'>Kilani's Produce</div></div>
+              <div className='station left fourteen'>Mark's Produce</div>
+              <div className='station right fourteen'></div>
+              <div className='station left fifteen'>Tito's Produce</div>
+              <div className='station right fifteen'></div>
+              <div className='station left sixteen'>Shadi Produce</div>
+              <div className='station middle sixteen'></div>
+              <div className='station right sixteen'></div>
+              <div className='doorway'></div>
+              <div className='station seventeen'><div className='sideways'>King Produce</div></div>
+              <div className='station left eighteen'>Iskander's Produce</div>
+              <div className='station right eighteen'></div>
+              <div className='station left nineteen'>Brothers Produce</div>
+              <div className='station middle nineteen'></div>
+              <div className='station middle nineteen'></div>
+              <div className='station middle nineteen'></div>
+              <div className='station right nineteen'></div>
+              <div className='doorway'></div>
+              <div className='station left twenty'>Boutros Brothers Produce</div>
+              <div className='station middle twenty'></div>
+              <div className='station right twenty'></div>
+              <div className='station left twentyone'>Christiano's Produce</div>
+              <div className='station right twentyone'></div>
+              <div className='station left twentytwo'>Miriam's Produce</div>
+              <div className='station right twentytwo'></div>
+              <div className='station left twentythree'>Ehab's Produce</div>
+              <div className='station right twentythree'></div>
+            </div>
           </div>
           <div id='produce-east'></div>
           <div id='main-floor'>
