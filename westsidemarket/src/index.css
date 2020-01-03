@@ -11,14 +11,14 @@
   width: 70%;
   margin: 40px;
   position: relative;
-  bottom: 310px;
+  bottom: 320px;
 }
 #lorain {
   z-index: 1;
   font-family: arial;
   color: brown;
   position: relative;
-  bottom: 355px;
+  bottom: 370px;
   right: 15%;
 }
 #w25th {
@@ -34,10 +34,55 @@
 #produce-north {
   border: 1px solid black;
   width: 76%;
-  height: 17%;
+  height: 20%;
   position: relative;
   top: 40px;
   right: -10%;
+}
+
+#top-row {
+  border: 1px solid black;
+  border-bottom: none;
+  width: 99.9%;
+  height: 45%;
+  position: relative;
+  display: flex;
+}
+
+.station {
+  width: 3.6%;
+  flex-direction: row;
+  border: 1px solid black;
+  font-family: arial;
+  font-size: 10px;
+}
+
+.left {
+  border-right: none;
+}
+.right {
+  border-left: none;
+}
+.middle {
+  border-right: none;
+  border-left: none;
+}
+.sideways {
+  transform: rotate(-90deg);
+  position: relative;
+  top: 28px;
+}
+.doorway{
+  width: 3.6%;
+  flex-direction: row;
+}
+#bottom-row {
+  border: 1px solid black;
+  border-top: none;
+  width: 99.9%;
+  height: 44%;
+  position: relative;
+  top: 10%;
 }
 
 #produce-east {

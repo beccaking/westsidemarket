@@ -106,14 +106,46 @@ class App extends React.Component {
       <div id='container'>
         <h1>My Marketplace: A Guide to the West Side Market</h1>
         <div id='interactive'>
-          <div id='produce-north'></div>
+          <div id='produce-north'>
+            <div id='top-row'>
+              <div className='station left one'>Marina's Produce</div>
+              <div className='station right one'></div>
+              <div className='station left two'>Tony's Produce</div>
+              <div className='station right two'></div>
+              <div className='station left three'>Sunshine Produce</div>
+              <div className='station right three'></div>
+              <div className='station left four'>A-1 Quality Produce</div>
+              <div className='station right four'></div>
+              <div className='station left five'>Habib's Produce</div>
+              <div className='station right five'></div>
+              <div className='station six'><div className='sideways'>Angelo's Produce</div></div>
+              <div className='doorway'></div>
+              <div className='station seven'><div className='sideways'>Jonathan's Produce</div></div>
+              <div className='station left eight'>Michael's Produce</div>
+              <div className='station right eight'></div>
+              <div className='station left nine'>Bacha Produce</div>
+              <div className='station right nine'></div>
+              <div className='station left'></div>
+              <div className='station right'></div>
+              <div className='station left ten'>Harb Produce</div>
+              <div className='station right ten'></div>
+              <div className='station left eleven'>Mena's Produce</div>
+              <div className='station right eleven'></div>
+              <div className='station left twelve'>Calabrese Produce</div>
+              <div className='station middle twelve'></div>
+              <div className='station right twelve'></div>
+              <div className='station left thirteen'>Luca's Produce</div>
+              <div className='station middle thirteen'></div>
+              <div className='station right thirteen'></div>
+            </div>
+            <div id='bottom-row'></div>
+          </div>
           <div id='produce-east'></div>
           <div id='main-floor'>
           </div>
           <div id='w25th'>WEST 25TH</div>
           <span id='lorain'>LORAIN AVENUE</span>
         </div>
-        <img className='map' src='https://i.imgur.com/fC6YP1U.png' alt='marketmap'/>
         {
           this.state.user
           ? null

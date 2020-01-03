@@ -6,8 +6,7 @@ class Vendor extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      show: false,
-      favorite: false
+      show: false
     }
   }
   show(){
@@ -15,21 +14,11 @@ class Vendor extends React.Component {
       show: !this.state.show
     })
   }
-  favorite(){
-    this.setState({
-      favorite: !this.state.favorite
-    })
-  }
   render(){
   let comments = this.props.comments.filter(comment => comment.vendorid === this.props.vendor.id)
     return(
       <div key={this.props.index} className='vendor'>
         <h2 className='vendortitle'><span onClick={()=>{this.show()}}>{this.props.vendor.name}</span>
-        {
-          this.state.favorite
-          ? <img className='icon' alt='favoritestar' onClick={()=>{this.favorite()}} src="https://img.icons8.com/ios-glyphs/30/000000/star.png"/>
-          : <img className='icon' alt='favoritestar' onClick={()=>{this.favorite()}} src="https://img.icons8.com/metro/26/000000/star.png"/>
-        }
         </h2>
         {
           this.state.show
