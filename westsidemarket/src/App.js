@@ -12,8 +12,19 @@ class App extends React.Component {
       view: 'home',
       comments: [],
       vendors: [],
-      user: 'Becca'
+      user: 'Becca',
+      vendor: [{}]
     }
+  }
+  fetchVendor = (id) => {
+    fetch(`${baseUrl}/market`)
+    .then(data => data.json())
+    .then(jData => {
+      const vendor = jData.filter(vend => vend.id === id)
+      this.setState({
+        vendor: vendor
+      })
+    }).catch(error => console.log(error))
   }
   handleUpdate = (updateData) => {
     fetch(`${baseUrl}/comments/${updateData.id}`, {
@@ -101,6 +112,11 @@ class App extends React.Component {
     this.fetchComments()
     this.fetchSession()
   }
+  closeVendor(){
+    this.setState({
+      vendor: [{}]
+    })
+  }
   render(){
     return(
       <div id='container'>
@@ -108,7 +124,7 @@ class App extends React.Component {
         <div id='interactive'>
           <div id='produce-north'>
             <div id='top-row'>
-              <div className='station left one'>Marina's Produce</div>
+              <div onClick={()=>{this.fetchVendor('A1')}} className='station left one'>Marina's Produce</div>
               <div className='station right one'></div>
               <div className='station left two'>Tony's Produce</div>
               <div className='station right two'></div>
@@ -421,9 +437,12 @@ class App extends React.Component {
             </div>
         }
         {
-          this.state.vendors.map((vendor, index) => (
-            <Vendor user={this.state.user} vendor={vendor} key={index} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
-          ))
+          this.state.vendor[0].name
+          ? <div>
+            <Vendor user={this.state.user} vendor={this.state.vendor} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
+            <button onClick={()=>{this.closeVendor()}}>Close</button>
+            </div>
+          : null
         }
       </div>
     )

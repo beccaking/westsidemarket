@@ -10,7 +10,6 @@
 }
 
 #lorain {
-  z-index: 1;
   font-family: arial;
   color: brown;
   position: relative;
@@ -18,7 +17,6 @@
   right: 15%;
 }
 #w25th {
-  z-index: 1;
   font-family: arial;
   color: brown;
   position: relative;

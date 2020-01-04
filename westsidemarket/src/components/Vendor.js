@@ -15,16 +15,15 @@ class Vendor extends React.Component {
     })
   }
   render(){
-  let comments = this.props.comments.filter(comment => comment.vendorid === this.props.vendor.id)
+    console.log('inside vendor component:', this.props.vendor)
+  let comments = this.props.comments.filter(comment => comment.vendorid === this.props.vendor[0].id)
     return(
-      <div key={this.props.index} className='vendor'>
-        <h2 className='vendortitle'><span onClick={()=>{this.show()}}>{this.props.vendor.name}</span>
+      <div className='vendor'>
+        <h2 className='vendortitle'><span onClick={()=>{this.show()}}>{this.props.vendor[0].name}</span>
         </h2>
-        {
-          this.state.show
-          ? <div className ='vendorcontent'>
-              <img className='vendorimg' src={this.props.vendor.image} alt={this.props.vendor.image}/>
-              <h4>{this.props.vendor.description}</h4>
+        <div className ='vendorcontent'>
+              <img className='vendorimg' src={this.props.vendor[0].image} alt={this.props.vendor[0].image}/>
+              <h4>{this.props.vendor[0].description}</h4>
               <div className='commentsection'>
                 <h4 className='comments'>Notes</h4>
                 {
@@ -39,8 +38,6 @@ class Vendor extends React.Component {
                 }
               </div>
             </div>
-          : null
-        }
       </div>
     )
   }
