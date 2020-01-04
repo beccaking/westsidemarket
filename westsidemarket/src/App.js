@@ -203,6 +203,86 @@ class App extends React.Component {
             </div>
           </div>
           <div id='main-floor'>
+            <div id='first-row'>
+              <div id='row-A'>
+                <div className='booth lefty thirtysix'>Mediterranean Imported Foods</div>
+                <div className='booth middly thirtysix'></div>
+                <div className='booth righty thirtysix'></div>
+                <div className='booth thirtyseven'>Frank's II</div>
+                <div className='door'></div>
+                <div className='booth lefty thirtyeight'>Annemarie's Dairy</div>
+                <div className='booth righty thirtyeight'></div>
+                <div className='door'></div>
+                <div className='booth lefty thirtynine'>Spanos Bakery</div>
+                <div className='booth righty thirtynine'></div>
+                <div className='door'></div>
+                <div className='booth lefty forty'>The Cheese Shop</div>
+                <div className='booth righty forty'></div>
+                <div className='door'></div>
+                <div className='booth lefty fortyone'>Irene Dever</div>
+                <div className='booth righty fortyone'></div>
+                <div className='door'></div>
+                <div className='booth fortytwo'>Oooh... Fudge</div>
+                <div className='booth lefty fortythree'>Maha's Falafel</div>
+                <div className='booth righty fortythree'></div>
+                <div className='booth lefty fortyfour'>Dani's Seafood</div>
+                <div className='booth righty fortyfour'></div>
+                <div className='door'></div>
+                <div className='booth'></div>
+              </div>
+              <div id='row-B'>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+                <div className='booth'></div>
+              </div>
+              <div id='row-C'>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              <div className='booth'></div>
+              </div>
+            </div>
+            <div id='second-row'></div>
+            <div id='third-row'></div>
           </div>
           <div id='w25th'>WEST 25TH</div>
           <span id='lorain'>LORAIN AVENUE</span>

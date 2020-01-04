@@ -5,18 +5,10 @@
   margin: 10px auto;
 }
 
-.station, .stand:hover {
+.station, .stand, .booth:hover {
   cursor: pointer;
 }
 
-#main-floor {
-  border: 1px solid black;
-  height: 60%;
-  width: 70%;
-  margin: 40px;
-  position: relative;
-  bottom: 320px;
-}
 #lorain {
   z-index: 1;
   font-family: arial;
@@ -33,6 +25,69 @@
   right: 47%;
   bottom: 500px;
   transform: rotate(-90deg);
+}
+
+#main-floor {
+  border: 2px solid black;
+  height: 60%;
+  width: 70%;
+  margin: 40px;
+  position: relative;
+  bottom: 320px;
+}
+#first-row {
+  border: 1px solid black;
+  height: 33%;
+}
+#second-row {
+  border: 1px solid black;
+  height: 33%;
+}
+#third-row {
+  border: 1px solid black;
+  height: 33%;
+}
+#row-A {
+  display: flex;
+  height: 25%;
+}
+#row-B {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 20px;
+  margin-bottom: 5px;
+}
+#row-C {
+  display: flex;
+  position: relative;
+  top: 20px;
+  height: 25%;
+}
+.booth {
+  flex-direction: row;
+  width: 5%;
+  height: 100%;
+  border: 1px solid black;
+  font-size: 10px;
+  font-family: arial;
+  padding: 2px;
+}
+.lefty {
+  border-right: none;
+}
+.middly {
+  border-right: none;
+  border-left: none;
+}
+.righty {
+  border-left: none;
+}
+.door {
+  flex-direction: row;
+  width: 5%;
+  height: 100%;
+  border: none;
 }
 
 #produce-north {
