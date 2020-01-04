@@ -60,9 +60,37 @@
 }
 #row-C {
   display: flex;
+  height: 25%;
   position: relative;
   top: 20px;
+}
+#row-D {
+  display: flex;
   height: 25%;
+  position: relative;
+  top: 25px;
+}
+#row-F {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 30px;
+}
+#row-G {
+  display: flex;
+  height: 25%;
+}
+#row-H {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 4px;
+}
+#row-I {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 24px;
 }
 .booth {
   flex-direction: row;
