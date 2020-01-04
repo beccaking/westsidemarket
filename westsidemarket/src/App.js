@@ -124,124 +124,124 @@ class App extends React.Component {
         <div id='interactive'>
           <div id='produce-north'>
             <div id='top-row'>
-              <div onClick={()=>{this.fetchVendor('A1')}} className='station left one'>Marina's Produce</div>
-              <div className='station right one'></div>
-              <div className='station left two'>Tony's Produce</div>
-              <div className='station right two'></div>
-              <div className='station left three'>Sunshine Produce</div>
-              <div className='station right three'></div>
-              <div className='station left four'>A-1 Quality Produce</div>
-              <div className='station right four'></div>
-              <div className='station left five'>Habib's Produce</div>
-              <div className='station right five'></div>
-              <div className='station six'><div className='sideways'>Angelo's Produce</div></div>
+              <div onClick={()=>{this.fetchVendor('one')}} className='station left one'>Marina's Produce</div>
+              <div onClick={()=>{this.fetchVendor('one')}} className='station right one'></div>
+              <div onClick={()=>{this.fetchVendor('two')}} className='station left two'>Tony's Produce</div>
+              <div onClick={()=>{this.fetchVendor('two')}} className='station right two'></div>
+              <div onClick={()=>{this.fetchVendor('three')}} className='station left three'>Sunshine Produce</div>
+              <div onClick={()=>{this.fetchVendor('three')}} className='station right three'></div>
+              <div onClick={()=>{this.fetchVendor('four')}}className='station left four'>A-1 Quality Produce</div>
+              <div onClick={()=>{this.fetchVendor('four')}}className='station right four'></div>
+              <div onClick={()=>{this.fetchVendor('five')}}className='station left five'>Habib's Produce</div>
+              <div onClick={()=>{this.fetchVendor('five')}}className='station right five'></div>
+              <div onClick={()=>{this.fetchVendor('six')}}className='station six'><div className='sideways'>Angelo's Produce</div></div>
               <div className='doorway'></div>
-              <div className='station seven'><div className='sideways'>Jonathan's Produce</div></div>
-              <div className='station left eight'>Michael's Produce</div>
-              <div className='station right eight'></div>
-              <div className='station left nine'>Bacha Produce</div>
-              <div className='station right nine'></div>
+              <div onClick={()=>{this.fetchVendor('seven')}}className='station seven'><div className='sideways'>Jonathan's Produce</div></div>
+              <div onClick={()=>{this.fetchVendor('eight')}}className='station left eight'>Michael's Produce</div>
+              <div onClick={()=>{this.fetchVendor('eight')}}className='station right eight'></div>
+              <div onClick={()=>{this.fetchVendor('nine')}} className='station left nine'>Bacha Produce</div>
+              <div onClick={()=>{this.fetchVendor('nine')}}className='station right nine'></div>
               <div className='station left'></div>
               <div className='station right'></div>
-              <div className='station left ten'>Harb Produce</div>
-              <div className='station right ten'></div>
-              <div className='station left eleven'>Mena's Produce</div>
-              <div className='station right eleven'></div>
-              <div className='station left twelve'>Calabrese Produce</div>
-              <div className='station middle twelve'></div>
-              <div className='station right twelve'></div>
-              <div className='station left thirteen'>Luca's Produce</div>
-              <div className='station middle thirteen'></div>
-              <div className='station right thirteen'></div>
+              <div onClick={()=>{this.fetchVendor('ten')}}className='station left ten'>Harb's Produce</div>
+              <div onClick={()=>{this.fetchVendor('ten')}}className='station right ten'></div>
+              <div onClick={()=>{this.fetchVendor('eleven')}}className='station left eleven'>Mena's Produce</div>
+              <div onClick={()=>{this.fetchVendor('eleven')}}className='station right eleven'></div>
+              <div onClick={()=>{this.fetchVendor('twelve')}}className='station left twelve'>Calabrese Produce</div>
+              <div onClick={()=>{this.fetchVendor('twelve')}}className='station middle twelve'></div>
+              <div onClick={()=>{this.fetchVendor('twelve')}}className='station right twelve'></div>
+              <div onClick={()=>{this.fetchVendor('thirteen')}}className='station left thirteen'>Lucas' Produce</div>
+              <div onClick={()=>{this.fetchVendor('thirteen')}}className='station middle thirteen'></div>
+              <div onClick={()=>{this.fetchVendor('thirteen')}}className='station right thirteen'></div>
             </div>
             <div id='bottom-row'>
-              <div className='station left one'>Marina's Produce</div>
-              <div className='station right one'></div>
-              <div className='station fourteen'><div className='sideways'>Mark's Produce</div></div>
+              <div onClick={()=>{this.fetchVendor('one')}}className='station left one'>Marina's Produce</div>
+              <div onClick={()=>{this.fetchVendor('one')}}className='station right one'></div>
+              <div onClick={()=>{this.fetchVendor('fourteen')}}className='station fourteen'><div className='sideways'>Mark's Produce</div></div>
               <div className='doorway'></div>
-              <div className='station fifteen'><div className='sideways'>Kilani's Produce</div></div>
-              <div className='station left fourteen'>Mark's Produce</div>
-              <div className='station right fourteen'></div>
-              <div className='station left fifteen'>Tito's Produce</div>
-              <div className='station right fifteen'></div>
-              <div className='station left sixteen'>Shadi Produce</div>
-              <div className='station middle sixteen'></div>
-              <div className='station right sixteen'></div>
+              <div onClick={()=>{this.fetchVendor('kilani')}}className='station kilani'><div className='sideways'>Kilani Produce</div></div>
+              <div onClick={()=>{this.fetchVendor('fourteen')}}className='station left fourteen'>Mark's Produce</div>
+              <div onClick={()=>{this.fetchVendor('fourteen')}}className='station right fourteen'></div>
+              <div onClick={()=>{this.fetchVendor('fifteen')}}className='station left fifteen'>Tito's Produce</div>
+              <div onClick={()=>{this.fetchVendor('fifteen')}}className='station right fifteen'></div>
+              <div onClick={()=>{this.fetchVendor('sixteen')}}className='station left sixteen'>Shadi Produce</div>
+              <div onClick={()=>{this.fetchVendor('sixteen')}}className='station middle sixteen'></div>
+              <div onClick={()=>{this.fetchVendor('sixteen')}}className='station right sixteen'></div>
               <div className='doorway'></div>
-              <div className='station seventeen'><div className='sideways'>King Produce</div></div>
-              <div className='station left eighteen'>Iskander's Produce</div>
-              <div className='station right eighteen'></div>
-              <div className='station left nineteen'>Brothers Produce</div>
-              <div className='station middle nineteen'></div>
-              <div className='station middle nineteen'></div>
-              <div className='station middle nineteen'></div>
-              <div className='station right nineteen'></div>
+              <div onClick={()=>{this.fetchVendor('seventeen')}}className='station seventeen'><div className='sideways'>King Produce</div></div>
+              <div onClick={()=>{this.fetchVendor('eighteen')}}className='station left eighteen'>Iskander Produce</div>
+              <div onClick={()=>{this.fetchVendor('eighteen')}}className='station right eighteen'></div>
+              <div onClick={()=>{this.fetchVendor('nineteen')}}className='station left nineteen'>Brothers Produce</div>
+              <div onClick={()=>{this.fetchVendor('nineteen')}}className='station middle nineteen'></div>
+              <div onClick={()=>{this.fetchVendor('nineteen')}}className='station middle nineteen'></div>
+              <div onClick={()=>{this.fetchVendor('nineteen')}}className='station middle nineteen'></div>
+              <div onClick={()=>{this.fetchVendor('nineteen')}}className='station right nineteen'></div>
               <div className='doorway'></div>
-              <div className='station left twenty'>Boutros Brothers Produce</div>
-              <div className='station middle twenty'></div>
-              <div className='station right twenty'></div>
-              <div className='station left twentyone'>Christiano's Produce</div>
-              <div className='station right twentyone'></div>
-              <div className='station left twentytwo'>Miriam's Produce</div>
-              <div className='station right twentytwo'></div>
-              <div className='station left twentythree'>Ehab's Produce</div>
-              <div className='station right twentythree'></div>
+              <div onClick={()=>{this.fetchVendor('twenty')}}className='station left twenty'>Boutros Brothers Produce</div>
+              <div onClick={()=>{this.fetchVendor('twenty')}}className='station middle twenty'></div>
+              <div onClick={()=>{this.fetchVendor('twenty')}}className='station right twenty'></div>
+              <div onClick={()=>{this.fetchVendor('twentyone')}}className='station left twentyone'>Christiano's Produce</div>
+              <div onClick={()=>{this.fetchVendor('twentyone')}}className='station right twentyone'></div>
+              <div onClick={()=>{this.fetchVendor('twentytwo')}}className='station left twentytwo'>Miriam's Produce</div>
+              <div onClick={()=>{this.fetchVendor('twentytwo')}}className='station right twentytwo'></div>
+              <div onClick={()=>{this.fetchVendor('twentythree')}}className='station left twentythree'>Ehab's Produce</div>
+              <div onClick={()=>{this.fetchVendor('twentythree')}}className='station right twentythree'></div>
             </div>
           </div>
           <div id='produce-east'>
             <div id='left-row'>
-              <div className='stand top twentyfour'>Basketeria Produce</div>
-              <div className='stand mid twentyfour'></div>
-              <div className='stand bottom twentyfour'></div>
-              <div className='stand twentyfive'>Dave's Produce</div>
-              <div className='stand top twentysix'>A&J Produce</div>
-              <div className='stand bottom twentysix'></div>
-              <div className='stand twentyseven'>Fritz's Produce</div>
-              <div className='stand twentyeight'>That's Nuts</div>
+              <div onClick={()=>{this.fetchVendor('twentyfour')}}className='stand top twentyfour'>Basketeria Organics</div>
+              <div onClick={()=>{this.fetchVendor('twentyfour')}}className='stand mid twentyfour'></div>
+              <div onClick={()=>{this.fetchVendor('twentyfour')}}className='stand bottom twentyfour'></div>
+              <div onClick={()=>{this.fetchVendor('twentyfive')}}className='stand twentyfive'>Dave's Produce</div>
+              <div onClick={()=>{this.fetchVendor('twentysix')}}className='stand top twentysix'>A&J Produce</div>
+              <div onClick={()=>{this.fetchVendor('twentysix')}}className='stand bottom twentysix'></div>
+              <div onClick={()=>{this.fetchVendor('twentyseven')}}className='stand twentyseven'>Fritz's Produce</div>
+              <div onClick={()=>{this.fetchVendor('twentyeight')}}className='stand twentyeight'>That's Nuts</div>
               <div className='stand top'></div>
               <div className='stand bottom'></div>
-              <div className='stand top twentynine'>Rooted in Cleveland</div>
-              <div className='stand bottom twentynine'></div>
+              <div onClick={()=>{this.fetchVendor('twentynine')}}className='stand top twentynine'>Rooted in Cleveland</div>
+              <div onClick={()=>{this.fetchVendor('twentynine')}}className='stand bottom twentynine'></div>
             </div>
             <div id='right-row'>
-              <div className='stand top thirty'>Greg's Produce</div>
-              <div className='stand bottom thirty'></div>
-              <div className='stand top thirtyone'>Decaro's Produce</div>
-              <div className='stand bottom thirtyone'></div>
-              <div className='stand thirtytwo'>Ohio City Flowers</div>
+              <div onClick={()=>{this.fetchVendor('thirty')}}className='stand top thirty'>Greg's Produce</div>
+              <div onClick={()=>{this.fetchVendor('thirty')}}className='stand bottom thirty'></div>
+              <div onClick={()=>{this.fetchVendor('thirtyone')}}className='stand top thirtyone'>Decaro's Produce</div>
+              <div onClick={()=>{this.fetchVendor('thirtyone')}}className='stand bottom thirtyone'></div>
+              <div onClick={()=>{this.fetchVendor('thirtytwo')}}className='stand thirtytwo'>Ohio City Flowers</div>
               <div className='stand'></div>
-              <div className='stand thirtythree'>Jorgensen's Apiary</div>
-              <div className='stand thirtyfour'>Maple Valley Sugarbush</div>
+              <div onClick={()=>{this.fetchVendor('thirtythree')}}className='stand thirtythree'>Jorgensen's Apiary</div>
+              <div onClick={()=>{this.fetchVendor('thirtyfour')}}className='stand thirtyfour'>Maple Valley Sugarbush</div>
               <div className='stand top'></div>
               <div className='stand bottom'></div>
               <div className='stand'></div>
-              <div className='stand thirtyfive'>Paradise Flowers</div>
+              <div onClick={()=>{this.fetchVendor('thirtyfive')}}className='stand thirtyfive'>Paradise Flowers</div>
             </div>
           </div>
           <div id='main-floor'>
             <div id='first-row'>
               <div id='row-A'>
-                <div className='booth lefty thirtysix'>Mediterranean Imported Foods</div>
-                <div className='booth righty thirtysix'></div>
-                <div className='booth thirtyseven'>Frank's II</div>
+                <div onClick={()=>{this.fetchVendor('thirtysix')}}className='booth lefty thirtysix'>Mediterranean Imported Foods</div>
+                <div onClick={()=>{this.fetchVendor('thirtysix')}}className='booth righty thirtysix'></div>
+                <div onClick={()=>{this.fetchVendor('thirtyseven')}}className='booth thirtyseven'>Frank's II</div>
                 <div className='door'></div>
-                <div className='booth lefty thirtyeight'>Annemarie's Dairy</div>
-                <div className='booth righty thirtyeight'></div>
+                <div onClick={()=>{this.fetchVendor('thirtyeight')}}className='booth lefty thirtyeight'>Annemarie's Dairy</div>
+                <div onClick={()=>{this.fetchVendor('thirtyeight')}}className='booth righty thirtyeight'></div>
                 <div className='door'></div>
-                <div className='booth lefty thirtynine'>Spanos Bakery</div>
-                <div className='booth righty thirtynine'></div>
+                <div onClick={()=>{this.fetchVendor('thirtynine')}}className='booth lefty thirtynine'>Spanos Bakery</div>
+                <div onClick={()=>{this.fetchVendor('thirtynine')}}className='booth righty thirtynine'></div>
                 <div className='door'></div>
-                <div className='booth lefty forty'>The Cheese Shop</div>
-                <div className='booth righty forty'></div>
+                <div onClick={()=>{this.fetchVendor('forty')}}className='booth lefty forty'>The Cheese Shop</div>
+                <div onClick={()=>{this.fetchVendor('forty')}}className='booth righty forty'></div>
                 <div className='door'></div>
-                <div className='booth lefty fortyone'>Irene Dever</div>
-                <div className='booth righty fortyone'></div>
+                <div onClick={()=>{this.fetchVendor('fortyone')}}className='booth lefty fortyone'>Irene Dever</div>
+                <div onClick={()=>{this.fetchVendor('fortyone')}}className='booth righty fortyone'></div>
                 <div className='door'></div>
-                <div className='booth fortytwo'>Oooh... Fudge</div>
-                <div className='booth lefty fortythree'>Maha's Falafel</div>
-                <div className='booth righty fortythree'></div>
-                <div className='booth lefty fortyfour'>Dani's Seafood</div>
-                <div className='booth righty fortyfour'></div>
+                <div onClick={()=>{this.fetchVendor('fortytwo')}}className='booth fortytwo'>Ooo... Fudge</div>
+                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth lefty fortythree'>Maha's Falafel</div>
+                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth righty fortythree'></div>
+                <div onClick={()=>{this.fetchVendor('fortyfour')}}className='booth lefty fortyfour'>Dani's Seafood</div>
+                <div onClick={()=>{this.fetchVendor('fortyfour')}}className='booth righty fortyfour'></div>
                 <div className='door'></div>
                 <div className='booth'></div>
               </div>
@@ -249,48 +249,48 @@ class App extends React.Component {
                 <div className='booth lefty'></div>
                 <div className='booth middly'></div>
                 <div className='booth righty'></div>
-                <div className='booth fortyfive'>Frank's Brat</div>
+                <div onClick={()=>{this.fetchVendor('fortyfive')}} className='booth fortyfive'>Frank's Brat</div>
                 <div className='door'></div>
-                <div className='booth lefty fortysix'>Sebastian's Meats</div>
-                <div className='booth righty fortysix'></div>
+                <div onClick={()=>{this.fetchVendor('fortysix')}}className='booth lefty fortysix'>Sebastian's Meats</div>
+                <div onClick={()=>{this.fetchVendor('fortysix')}}className='booth righty fortysix'></div>
                 <div className='door'></div>
-                <div className='booth fortyseven'>Vince's Meats</div>
-                <div className='booth fortysix'>Seb. Meats</div>
+                <div onClick={()=>{this.fetchVendor('fortyseven')}}className='booth fortyseven'>Vince's Meats</div>
+                <div onClick={()=>{this.fetchVendor('fortysix')}}className='booth fortysix'>Seb. Meats</div>
                 <div className='door'></div>
-                <div className='booth fortyeight'>O.C. Sausage</div>
-                <div className='booth fortynine'>Weincek Meats</div>
+                <div onClick={()=>{this.fetchVendor('fortyeight')}}className='booth fortyeight'>O.C. Sausage</div>
+                <div onClick={()=>{this.fetchVendor('fortynine')}}className='booth fortynine'>Weincek Meats</div>
                 <div className='door'></div>
-                <div className='booth fifty'>Rita's</div>
-                <div className='booth fiftyone'>D.A. Russ</div>
+                <div onClick={()=>{this.fetchVendor('fifty')}}className='booth fifty'>Rita's</div>
+                <div onClick={()=>{this.fetchVendor('fiftyone')}}className='booth fiftyone'>D.A. Russ</div>
                 <div className='door'></div>
-                <div className='booth fiftytwo'>K&K Bakery</div>
-                <div className='booth lefty fortythree'>Maha's Falafel</div>
-                <div className='booth righty fortythree'></div>
+                <div onClick={()=>{this.fetchVendor('fiftytwo')}}className='booth fiftytwo'>K&K Bakery</div>
+                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth lefty fortythree'>Maha's Falafel</div>
+                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth righty fortythree'></div>
                 <div className='booth lefty'></div>
                 <div className='booth middly'></div>
                 <div className='booth righty'></div>
               </div>
               <div id='row-C'>
                 <div className='booth'></div>
-                <div className='booth lefty fiftythree'>Dohar/ Lovaszy</div>
-                <div className='booth righty fiftythree'></div>
-                <div className='booth fiftyfour'>Noodle Cat</div>
+                <div onClick={()=>{this.fetchVendor('fiftythree')}}className='booth lefty fiftythree'>Dohar/ Lovaszy</div>
+                <div onClick={()=>{this.fetchVendor('fiftythree')}}className='booth righty fiftythree'></div>
+                <div onClick={()=>{this.fetchVendor('fiftyfour')}}className='booth fiftyfour'>Noodle Cat</div>
                 <div className='door'></div>
-                <div className='booth lefty fiftyfive'>Foster's Meats</div>
-                <div className='booth righty fiftyfive'></div>
+                <div onClick={()=>{this.fetchVendor('fiftyfive')}}className='booth lefty fiftyfive'>Foster's Meats</div>
+                <div onClick={()=>{this.fetchVendor('fiftyfive')}}className='booth righty fiftyfive'></div>
                 <div className='door'></div>
-                <div className='booth lefty fiftysix'>Orale</div>
-                <div className='booth righty fiftysix'></div>
+                <div onClick={()=>{this.fetchVendor('fiftysix')}}className='booth lefty fiftysix'>Orale</div>
+                <div onClick={()=>{this.fetchVendor('fiftysix')}}className='booth righty fiftysix'></div>
                 <div className='door'></div>
-                <div className='booth fiftyseven'>Steve Check Jr.</div>
-                <div className='booth fiftyeight'>Lance's Beef</div>
+                <div onClick={()=>{this.fetchVendor('fiftyseven')}}className='booth fiftyseven'>Steve Check Jr.</div>
+                <div onClick={()=>{this.fetchVendor('fiftyeight')}}className='booth fiftyeight'>Lance's Beef</div>
                 <div className='door'></div>
-                <div className='booth lefty fiftynine'>Vera's Bakery</div>
-                <div className='booth righty fiftynine'></div>
+                <div onClick={()=>{this.fetchVendor('fiftynine')}}className='booth lefty fiftynine'>Vera's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('fiftynine')}}className='booth righty fiftynine'></div>
                 <div className='door'></div>
-                <div className='booth lefty sixty'>Kate's fish</div>
-                <div className='booth middly sixty'></div>
-                <div className='booth righty sixty'></div>
+                <div onClick={()=>{this.fetchVendor('sixty')}}className='booth lefty sixty'>Kate's Fish</div>
+                <div onClick={()=>{this.fetchVendor('sixty')}}className='booth middly sixty'></div>
+                <div onClick={()=>{this.fetchVendor('sixty')}}className='booth righty sixty'></div>
                 <div className='booth lefty'></div>
                 <div className='booth middly'></div>
                 <div className='booth righty'></div>
@@ -298,50 +298,50 @@ class App extends React.Component {
             </div>
             <div id='second-row'>
               <div id='row-D'>
-                <div className='booth sixtyone'>Classic Seafood</div>
+                <div onClick={()=>{this.fetchVendor('sixtyone')}}className='booth sixtyone'>Classic Seafood</div>
                 <div className='door'></div>
-                <div className='booth sixtytwo'>Urban Herbs</div>
-                <div className='booth sixtythree'>Ohio City Pasta</div>
+                <div onClick={()=>{this.fetchVendor('sixtytwo')}}className='booth sixtytwo'>Urban Herbs</div>
+                <div onClick={()=>{this.fetchVendor('sixtythree')}}className='booth sixtythree'>Ohio City Pasta</div>
                 <div className='door'></div>
-                <div className='booth sixtyfour'>Pork Chop Shop</div>
-                <div className='booth sixtyfive'>Pierogi Palace</div>
+                <div onClick={()=>{this.fetchVendor('sixtyfour')}}className='booth sixtyfour'>Pork Chop Shop</div>
+                <div onClick={()=>{this.fetchVendor('sixtyfive')}}className='booth sixtyfive'>Pierogi Palace</div>
                 <div className='door'></div>
-                <div className='booth lefty sixtysix'>Jim's Meats</div>
-                <div className='booth righty sixtysix'></div>
+                <div onClick={()=>{this.fetchVendor('sixtysix')}}className='booth lefty sixtysix'>Jim's Meats</div>
+                <div onClick={()=>{this.fetchVendor('sixtysix')}}className='booth righty sixtysix'></div>
                 <div className='door'></div>
-                <div className='booth lefty sixtyseven'>D.W. Whitakers Meats</div>
-                <div className='booth righty sixtyseven'></div>
+                <div onClick={()=>{this.fetchVendor('sixtyseven')}}className='booth lefty sixtyseven'>D.W. Whitaker Meats</div>
+                <div onClick={()=>{this.fetchVendor('sixtyseven')}}className='booth righty sixtyseven'></div>
                 <div className='door'></div>
-                <div className='booth sixtyseven'>D.W.W.s Meats</div>
-                <div className='booth sixtyeight'>Narrin's Spice + Sauce</div>
+                <div onClick={()=>{this.fetchVendor('sixtyseven')}}className='booth sixtyseven'>D.W.W.s Meats</div>
+                <div onClick={()=>{this.fetchVendor('sixtyeight')}}className='booth sixtyeight'>Narrin's Spice + Sauce</div>
                 <div className='door'></div>
-                <div className='booth sixtynine'>Apple Cured Meats</div>
-                <div className='booth seventy'>Steve's Gyro</div>
+                <div onClick={()=>{this.fetchVendor('sixtynine')}}className='booth sixtynine'>Apple Cured Meats</div>
+                <div onClick={()=>{this.fetchVendor('seventy')}}className='booth seventy'>Steve's Gyros</div>
                 <div className='booth lefty'></div>
                 <div className='booth middly'></div>
                 <div className='booth middly'></div>
                 <div className='booth righty'></div>
               </div>
               <div id='row-F'>
-                <div className='booth sixtyone'>Classic Seafood</div>
+                <div onClick={()=>{this.fetchVendor('sixtyone')}}className='booth sixtyone'>Classic Seafood</div>
                 <div className='door'></div>
-                <div className='booth seventyone'>Michael's Bakery</div>
-                <div className='booth seventytwo'>Walker Meats</div>
+                <div onClick={()=>{this.fetchVendor('seventyone')}}className='booth seventyone'>Michael's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('seventytwo')}}className='booth seventytwo'>Walker Meats</div>
                 <div className='door'></div>
-                <div className='booth lefty seventythree'>Fernengels</div>
-                <div className='booth righty seventythree'></div>
+                <div onClick={()=>{this.fetchVendor('seventythree')}}className='booth lefty seventythree'>Fernengels</div>
+                <div onClick={()=>{this.fetchVendor('seventythree')}}className='booth righty seventythree'></div>
                 <div className='door'></div>
-                <div className='booth seventyfour'>Theresa Bakery</div>
-                <div className='booth seventyfive'>Cake Royale</div>
+                <div onClick={()=>{this.fetchVendor('seventyfour')}}className='booth seventyfour'>Theresa Bakery</div>
+                <div onClick={()=>{this.fetchVendor('seventyfive')}}className='booth seventyfive'>Cake Royale</div>
                 <div className='door'></div>
-                <div className='booth seventysix'>Rolston Poultry</div>
-                <div className='booth seventyseven'>EDW. Badstuber & Son</div>
+                <div onClick={()=>{this.fetchVendor('seventysix')}} className='booth seventysix'>Rolston Poultry</div>
+                <div onClick={()=>{this.fetchVendor('seventyseven')}}className='booth seventyseven'>EDW. Badstuber & Son</div>
                 <div className='door'></div>
-                <div className='booth seventyeight'>Larry Vistein's</div>
-                <div className='booth seventynine'>Turczyk's Meats</div>
+                <div onClick={()=>{this.fetchVendor('seventyeight')}}className='booth seventyeight'>Larry Vistein's</div>
+                <div onClick={()=>{this.fetchVendor('seventynine')}}className='booth seventynine'>Turczyk's Meats</div>
                 <div className='door'></div>
-                <div className='booth eighty'>Wiencek Poultry</div>
-                <div className='booth eightyone'>Juice Garden</div>
+                <div onClick={()=>{this.fetchVendor('eighty')}}className='booth eighty'>Wiencek Poultry</div>
+                <div onClick={()=>{this.fetchVendor('eightyone')}}className='booth eightyone'>Juice Garden</div>
                 <div className='booth lefty'></div>
                 <div className='booth middly'></div>
                 <div className='booth middly'></div>
@@ -351,24 +351,24 @@ class App extends React.Component {
             <div id='third-row'>
               <div id='row-G'>
                 <div className='booth'></div>
-                <div className='booth eightytwo'>City Roast</div>
-                <div className='booth eightythree'>Crepes De Luxe</div>
-                <div className='booth eightyfour'>Kauffman Poultry</div>
+                <div onClick={()=>{this.fetchVendor('eightytwo')}}className='booth eightytwo'>City Roast</div>
+                <div onClick={()=>{this.fetchVendor('eightythree')}}className='booth eightythree'>Crepes De Luxe</div>
+                <div onClick={()=>{this.fetchVendor('eightyfour')}}className='booth eightyfour'>Kauffman Poultry</div>
                 <div className='door'></div>
-                <div className='booth lefty eightyfive'>M&M Foods/Toney's Baloney</div>
-                <div className='booth righty eightyfive'></div>
+                <div onClick={()=>{this.fetchVendor('eightyfive')}}className='booth lefty eightyfive'>M&M Foods/Toney's Baloney</div>
+                <div onClick={()=>{this.fetchVendor('eightyfive')}}className='booth righty eightyfive'></div>
                 <div className='door'></div>
-                <div className='booth eightysix'>Tayse Meats</div>
-                <div className='booth eightyseven'>Nonno Joe's</div>
+                <div onClick={()=>{this.fetchVendor('eightysix')}}className='booth eightysix'>Tayse Meats</div>
+                <div onClick={()=>{this.fetchVendor('eightyseven')}} className='booth eightyseven'>Nonno Joe's</div>
                 <div className='door'></div>
-                <div className='booth lefty eightyeight'>Dionne's Meats</div>
-                <div className='booth righty eightyeight'></div>
+                <div onClick={()=>{this.fetchVendor('eightyeight')}}className='booth lefty eightyeight'>Dionne's Meats</div>
+                <div onClick={()=>{this.fetchVendor('eightyeight')}}className='booth righty eightyeight'></div>
                 <div className='door'></div>
-                <div className='booth eightynine'>Christopher's Bakery</div>
-                <div className='booth ninety'>Reilly's</div>
+                <div onClick={()=>{this.fetchVendor('eightynine')}}className='booth eightynine'>Christopher's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('ninety')}}className='booth ninety'>Reilly's</div>
                 <div className='door'></div>
-                <div className='booth ninetyone'>Michelle's Bakery</div>
-                <div className='booth ninetytwo'>Campbell's Popcorn</div>
+                <div onClick={()=>{this.fetchVendor('ninetyone')}}className='booth ninetyone'>Michelle's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('ninetytwo')}}className='booth ninetytwo'>Campbell's Popcorn</div>
                 <div className='booth lefty'></div>
                 <div className='booth middly'></div>
                 <div className='booth middly'></div>
@@ -378,51 +378,51 @@ class App extends React.Component {
                 <div className='booth lefty'></div>
                 <div className='booth middly'></div>
                 <div className='booth righty'></div>
-                <div className='booth eightyfour'>Kauffman Poultry</div>
+                <div onClick={()=>{this.fetchVendor('eightyfour')}}className='booth eightyfour'>Kauffman Poultry</div>
                 <div className='door'></div>
-                <div className='booth lefty ninetythree'>Pinzone's Meats</div>
-                <div className='booth righty ninetythree'></div>
+                <div onClick={()=>{this.fetchVendor('ninetythree')}}className='booth lefty ninetythree'>Pinzone's Meats</div>
+                <div onClick={()=>{this.fetchVendor('ninetythree')}}className='booth righty ninetythree'></div>
                 <div className='door'></div>
-                <div className='booth ninetyfour'>J&J Meats</div>
-                <div className='booth ninetyfive'>Dionne's Poultry</div>
+                <div onClick={()=>{this.fetchVendor('ninetyfour')}}className='booth ninetyfour'>J&J Meats</div>
+                <div onClick={()=>{this.fetchVendor('ninetyfive')}}className='booth ninetyfive'>Dionne's Poultry</div>
                 <div className='door'></div>
-                <div className='booth lefty ninetysix'>Mediterra Bakehouse</div>
-                <div className='booth righty ninetysix'></div>
+                <div onClick={()=>{this.fetchVendor('ninetysix')}}className='booth lefty ninetysix'>Mediterra Bakehouse</div>
+                <div onClick={()=>{this.fetchVendor('ninetysix')}}className='booth righty ninetysix'></div>
                 <div className='door'></div>
-                <div className='booth lefty ninetyseven'>Czuchraj Meats</div>
-                <div className='booth righty ninetyseven'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyseven')}}className='booth lefty ninetyseven'>Czuchraj Meats</div>
+                <div onClick={()=>{this.fetchVendor('ninetyseven')}}className='booth righty ninetyseven'></div>
                 <div className='door'></div>
-                <div className='booth ninetyone'>Michelle's Bakery</div>
-                <div className='booth lefty ninetyeight'>West Side Market Cafe</div>
+                <div onClick={()=>{this.fetchVendor('ninetyone')}}className='booth ninetyone'>Michelle's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth lefty ninetyeight'>West Side Market Cafe</div>
                 <div className='booth middly'></div>
                 <div className='booth middly'></div>
                 <div className='booth middly'></div>
                 <div className='booth righty'></div>
               </div>
               <div id='row-I'>
-                <div className='booth lefty ninetynine'>Johnny Hot Dog</div>
-                <div className='booth righty ninetynine'></div>
+                <div onClick={()=>{this.fetchVendor('ninetynine')}}className='booth lefty ninetynine'>Johnny Hot Dog</div>
+                <div onClick={()=>{this.fetchVendor('ninetynine')}}className='booth righty ninetynine'></div>
                 <div className='booth'></div>
-                <div className='booth onehundred'>P-Nut Gallery</div>
+                <div onClick={()=>{this.fetchVendor('onehundred')}}className='booth onehundred'>P-Nut Gallery</div>
                 <div className='door'></div>
-                <div className='booth lefty onehundredone'>Meister Foods</div>
-                <div className='booth righty onehundredone'></div>
+                <div onClick={()=>{this.fetchVendor('onehundredone')}}className='booth lefty onehundredone'>Meister Foods</div>
+                <div onClick={()=>{this.fetchVendor('onehundredone')}}className='booth righty onehundredone'></div>
                 <div className='door'></div>
-                <div className='booth lefty onehundredtwo'>Judy's Oasis</div>
-                <div className='booth righty onehundredtwo'></div>
+                <div onClick={()=>{this.fetchVendor('onehundredtwo')}}className='booth lefty onehundredtwo'>Judy's Oasis</div>
+                <div onClick={()=>{this.fetchVendor('onehundredtwo')}}className='booth righty onehundredtwo'></div>
                 <div className='door'></div>
-                <div className='booth onehundredthree'>Frickaccio</div>
-                <div className='booth onehundredfour'>Grandma Campbell's</div>
+                <div onClick={()=>{this.fetchVendor('onehundredthree')}}className='booth onehundredthree'>Frickaccio</div>
+                <div onClick={()=>{this.fetchVendor('onehundredfour')}}className='booth onehundredfour'>Grandma Campbell's</div>
                 <div className='door'></div>
-                <div className='booth lefty onehundredfive'>Kim Se</div>
-                <div className='booth righty onehundredfive'></div>
+                <div onClick={()=>{this.fetchVendor('onehundredfive')}}className='booth lefty onehundredfive'>Kim Se</div>
+                <div onClick={()=>{this.fetchVendor('onehundredfive')}}className='booth righty onehundredfive'></div>
                 <div className='door'></div>
-                <div className='booth onehundredsix'>Olive & Grape</div>
-                <div className='booth lefty ninetyeight'>West Side Market Cafe</div>
-                <div className='booth middly ninetyeight'></div>
-                <div className='booth middly ninetyeight'></div>
-                <div className='booth middly ninetyeight'></div>
-                <div className='booth righty ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('onehundredsix')}}className='booth onehundredsix'>Olive Cleveland</div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth lefty ninetyeight'>West Side Market Cafe</div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth righty ninetyeight'></div>
               </div>
             </div>
           </div>
