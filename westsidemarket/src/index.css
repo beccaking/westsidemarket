@@ -1,10 +1,220 @@
+#interactive {
+  border: 3px solid black;
+  height: 600px;
+  width: 1000px;
+  margin: 10px auto;
+}
+
+.station, .stand, .booth:hover {
+  cursor: pointer;
+}
+
+#lorain {
+  z-index: 1;
+  font-family: arial;
+  color: brown;
+  position: relative;
+  bottom: 370px;
+  right: 15%;
+}
+#w25th {
+  z-index: 1;
+  font-family: arial;
+  color: brown;
+  position: relative;
+  right: 47%;
+  bottom: 500px;
+  transform: rotate(-90deg);
+}
+
+#main-floor {
+  border: 2px solid black;
+  height: 60%;
+  width: 70%;
+  margin: 40px;
+  position: relative;
+  bottom: 320px;
+}
+#first-row {
+  height: 33%;
+}
+#second-row {
+  height: 33%;
+}
+#third-row {
+  height: 33%;
+}
+#row-A {
+  display: flex;
+  height: 25%;
+}
+#row-B {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 20px;
+  margin-bottom: 5px;
+}
+#row-C {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 20px;
+}
+#row-D {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 25px;
+}
+#row-F {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 30px;
+}
+#row-G {
+  display: flex;
+  height: 25%;
+}
+#row-H {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 4px;
+}
+#row-I {
+  display: flex;
+  height: 25%;
+  position: relative;
+  top: 30px;
+}
+.booth {
+  flex-direction: row;
+  width: 4.6%;
+  height: 100%;
+  border: 1px solid black;
+  font-size: 9px;
+  font-family: arial;
+  padding: 2px;
+}
+.lefty {
+  border-right: none;
+}
+.middly {
+  border-right: none;
+  border-left: none;
+}
+.righty {
+  border-left: none;
+}
+.door {
+  flex-direction: row;
+  width: 4.6%;
+  height: 100%;
+  border: none;
+}
+
+#produce-north {
+  border: 2px solid black;
+  width: 80%;
+  height: 20%;
+  position: relative;
+  top: 40px;
+  right: -5%;
+}
+#top-row {
+  border: 1px solid black;
+  border-bottom: none;
+  width: 100%;
+  height: 45%;
+  position: relative;
+  display: flex;
+}
+.station {
+  width: 3.6%;
+  flex-direction: row;
+  border: 1px solid black;
+  font-family: arial;
+  font-size: 10px;
+  padding: 2px;
+}
+.left {
+  border-right: none;
+}
+.right {
+  border-left: none;
+}
+.middle {
+  border-right: none;
+  border-left: none;
+}
+.sideways {
+  transform: rotate(-90deg);
+  position: relative;
+  top: 23px;
+}
+.doorway{
+  width: 3.6%;
+  flex-direction: row;
+}
+#bottom-row {
+  border: 1px solid black;
+  border-top: none;
+  width: 100%;
+  height: 44%;
+  position: relative;
+  top: 10%;
+  display: flex;
+}
+
+#produce-east {
+  border: 2px solid black;
+  width: 15%;
+  height: 60%;
+  position: relative;
+  top: 6.5%;
+  left: 80%;
+}
+#left-row {
+  width: 44%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+#right-row {
+  width: 44%;
+  height: 99.7%;
+  border: 1px solid black;
+  position: relative;
+  bottom: 101%;
+  left: 55%;
+}
+.stand {
+  height: 8%;
+  font-family: arial;
+  font-size: 10px;
+  border: 1px solid black;
+}
+.top {
+  border-bottom: none;
+}
+.bottom {
+  border-top: none;
+}
+.mid {
+  border-top: none;
+  border-bottom: none;
+}
+
 body {
   background: url('http://www.civicartsproject.com/wp-content/uploads/Ohio_City_Cleveland_Ohio_CAPAHZ0153.jpg');
+  background-size: cover;
 }
 
 #container {
-  margin: 0 auto;
-  max-width: 1000px;
+  margin: 100px auto;
+  max-width: 1200px;
   text-align: center;
   background: #F7F2E0;
 }
@@ -60,19 +270,6 @@ body {
 
 .vendorimg {
   width: 200px;
-}
-
-.map {
-  width: 900px;
-  border: 1px solid black;
-}
-
-.mymap {
-  display: grid;
-  width: 800px;
-  height: 600px;
-  margin: 0 auto;
-  border: 2px solid black;
 }
 
 code {
