@@ -122,7 +122,7 @@ class App extends React.Component {
   render(){
     return(
       <div id='container'>
-        <h1>My Marketplace: A Guide to the West Side Market</h1>
+        <h1 id='heading'>My Marketplace: A Guide to the West Side Market</h1>
         <div id='interactive'>
           <div id='produce-north'>
             <div id='top-row'>
