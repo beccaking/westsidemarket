@@ -25,7 +25,6 @@ class Comment extends React.Component{
     this.setState({
       show: !this.state.show
     })
-    console.log(this.state)
   }
   componentDidMount(){
     this.setState({

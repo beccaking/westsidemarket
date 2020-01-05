@@ -70,6 +70,7 @@ class App extends React.Component {
     console.log(this.state);
   }
   handleCreate = (comment) => {
+    console.log('comment inside handlecreate function', comment)
     fetch(`${baseUrl}/comments`, {
       body: JSON.stringify(comment),
       method: 'POST',
@@ -82,6 +83,7 @@ class App extends React.Component {
     }).then(jsonedComment => {
       this.setState(prevState => {
         prevState.comments = jsonedComment
+        console.log(jsonedComment)
         return { comments: prevState.comments }
       })
     }).catch(error=>console.log(error))
