@@ -245,19 +245,19 @@ class App extends React.Component {
                 <div onClick={()=>{this.fetchVendor('fortyfour')}}className='booth lefty fortyfour'>Dani's Seafood</div>
                 <div onClick={()=>{this.fetchVendor('fortyfour')}}className='booth righty fortyfour'></div>
                 <div className='door'></div>
-                <div className='booth'></div>
+                <div className='door'></div>
               </div>
               <div id='row-B'>
-                <div className='booth lefty'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('fortyfive')}} className='booth fortyfive'>Frank's Brat</div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('fortysix')}}className='booth lefty fortysix'>Sebastian's Meats</div>
                 <div onClick={()=>{this.fetchVendor('fortysix')}}className='booth righty fortysix'></div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('fortyseven')}}className='booth fortyseven'>Vince's Meats</div>
-                <div onClick={()=>{this.fetchVendor('fortysix')}}className='booth fortysix'>Seb. Meats</div>
+                <div onClick={()=>{this.fetchVendor('fortysix')}}className='booth sebmeats fortysix'>Seb. Meats</div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('fortyeight')}}className='booth fortyeight'>O.C. Sausage</div>
                 <div onClick={()=>{this.fetchVendor('fortynine')}}className='booth fortynine'>Weincek Meats</div>
@@ -266,14 +266,14 @@ class App extends React.Component {
                 <div onClick={()=>{this.fetchVendor('fiftyone')}}className='booth fiftyone'>D.A. Russ</div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('fiftytwo')}}className='booth fiftytwo'>K&K Bakery</div>
-                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth lefty fortythree'>Maha's Falafel</div>
-                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth righty fortythree'></div>
-                <div className='booth lefty'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
+                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth lefty maha fortythree'>Maha's Falafel</div>
+                <div onClick={()=>{this.fetchVendor('fortythree')}}className='booth righty maha fortythree'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
               </div>
               <div id='row-C'>
-                <div className='booth'></div>
+                <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('fiftythree')}}className='booth lefty fiftythree'>Dohar/ Lovaszy</div>
                 <div onClick={()=>{this.fetchVendor('fiftythree')}}className='booth righty fiftythree'></div>
                 <div onClick={()=>{this.fetchVendor('fiftyfour')}}className='booth fiftyfour'>Noodle Cat</div>
@@ -293,9 +293,9 @@ class App extends React.Component {
                 <div onClick={()=>{this.fetchVendor('sixty')}}className='booth lefty sixty'>Kate's Fish</div>
                 <div onClick={()=>{this.fetchVendor('sixty')}}className='booth middly sixty'></div>
                 <div onClick={()=>{this.fetchVendor('sixty')}}className='booth righty sixty'></div>
-                <div className='booth lefty'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
               </div>
             </div>
             <div id='second-row'>
@@ -319,10 +319,10 @@ class App extends React.Component {
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('sixtynine')}}className='booth sixtynine'>Apple Cured Meats</div>
                 <div onClick={()=>{this.fetchVendor('seventy')}}className='booth seventy'>Steve's Gyros</div>
-                <div className='booth lefty'></div>
-                <div className='booth middly'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
               </div>
               <div id='row-F'>
                 <div onClick={()=>{this.fetchVendor('sixtyone')}}className='booth sixtyone'>Classic Seafood</div>
@@ -344,15 +344,15 @@ class App extends React.Component {
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('eighty')}}className='booth eighty'>Wiencek Poultry</div>
                 <div onClick={()=>{this.fetchVendor('eightyone')}}className='booth eightyone'>Juice Garden</div>
-                <div className='booth lefty'></div>
-                <div className='booth middly'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
               </div>
             </div>
             <div id='third-row'>
               <div id='row-G'>
-                <div className='booth'></div>
+                <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('eightytwo')}}className='booth eightytwo'>City Roast</div>
                 <div onClick={()=>{this.fetchVendor('eightythree')}}className='booth eightythree'>Crepes De Luxe</div>
                 <div onClick={()=>{this.fetchVendor('eightyfour')}}className='booth eightyfour'>Kauffman Poultry</div>
@@ -366,21 +366,21 @@ class App extends React.Component {
                 <div onClick={()=>{this.fetchVendor('eightyeight')}}className='booth lefty eightyeight'>Dionne's Meats</div>
                 <div onClick={()=>{this.fetchVendor('eightyeight')}}className='booth righty eightyeight'></div>
                 <div className='door'></div>
-                <div onClick={()=>{this.fetchVendor('eightynine')}}className='booth eightynine'>Christopher's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('eightynine')}}className='booth eightynine'>Chris's Bakery</div>
                 <div onClick={()=>{this.fetchVendor('ninety')}}className='booth ninety'>Reilly's</div>
                 <div className='door'></div>
-                <div onClick={()=>{this.fetchVendor('ninetyone')}}className='booth ninetyone'>Michelle's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('ninetyone')}}className='booth michelle ninetyone'>Michelle's Bakery</div>
                 <div onClick={()=>{this.fetchVendor('ninetytwo')}}className='booth ninetytwo'>Campbell's Popcorn</div>
-                <div className='booth lefty'></div>
-                <div className='booth middly'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
               </div>
               <div id='row-H'>
-                <div className='booth lefty'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
-                <div onClick={()=>{this.fetchVendor('eightyfour')}}className='booth eightyfour'>Kauffman Poultry</div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div className='door'></div>
+                <div onClick={()=>{this.fetchVendor('eightyfour')}}className='booth kauffman eightyfour'>Kauffman Poultry</div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('ninetythree')}}className='booth lefty ninetythree'>Pinzone's Meats</div>
                 <div onClick={()=>{this.fetchVendor('ninetythree')}}className='booth righty ninetythree'></div>
@@ -394,17 +394,17 @@ class App extends React.Component {
                 <div onClick={()=>{this.fetchVendor('ninetyseven')}}className='booth lefty ninetyseven'>Czuchraj Meats</div>
                 <div onClick={()=>{this.fetchVendor('ninetyseven')}}className='booth righty ninetyseven'></div>
                 <div className='door'></div>
-                <div onClick={()=>{this.fetchVendor('ninetyone')}}className='booth ninetyone'>Michelle's Bakery</div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth lefty ninetyeight'>West Side Market Cafe</div>
-                <div className='booth middly'></div>
-                <div className='booth middly'></div>
-                <div className='booth middly'></div>
-                <div className='booth righty'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyone')}}className='booth bakery ninetyone'>Michelle's Bakery</div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth wscafe lefty ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth wscafe middly ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth wscafe middly ninetyeight'>West Side Market Cafe</div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth wscafe middly ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth wscafe righty ninetyeight'></div>
               </div>
               <div id='row-I'>
                 <div onClick={()=>{this.fetchVendor('ninetynine')}}className='booth lefty ninetynine'>Johnny Hot Dog</div>
                 <div onClick={()=>{this.fetchVendor('ninetynine')}}className='booth righty ninetynine'></div>
-                <div className='booth'></div>
+                <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('onehundred')}}className='booth onehundred'>P-Nut Gallery</div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('onehundredone')}}className='booth lefty onehundredone'>Meister Foods</div>
@@ -420,9 +420,9 @@ class App extends React.Component {
                 <div onClick={()=>{this.fetchVendor('onehundredfive')}}className='booth righty onehundredfive'></div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('onehundredsix')}}className='booth onehundredsix'>Olive Cleveland</div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth lefty ninetyeight'>West Side Market Cafe</div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth lefty ninetyeight'></div>
                 <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'>West Side Market Cafe</div>
                 <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
                 <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth righty ninetyeight'></div>
               </div>

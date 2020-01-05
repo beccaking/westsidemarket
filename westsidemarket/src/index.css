@@ -33,6 +33,16 @@
   position: relative;
   bottom: 320px;
 }
+.booth {
+  flex-direction: row;
+  width: 4.6%;
+  height: 100%;
+  border: 1px solid black;
+  font-size: 9px;
+  font-family: arial;
+  padding: 2px;
+  text-align: center;
+}
 #first-row {
   height: 33%;
 }
@@ -51,13 +61,59 @@
   height: 25%;
   position: relative;
   top: 20px;
+  right: 12px;
   margin-bottom: 5px;
+}
+.fortyseven {
+  position: relative;
+  right: 3px;
+}
+.fortyeight {
+  position: relative;
+  right: 5px;
+}
+.fortynine {
+  position: relative;
+  right: 5px;
+}
+.fifty {
+  position: relative;
+  right: 15px;
+}
+.fiftyone {
+  position: relative;
+  right: 15px;
+}
+.fiftytwo {
+  position: relative;
+  right: 24px;
+}
+.sebmeats {
+  position: relative;
+  right: 5px;
+}
+.maha {
+  position: relative;
+  right: 24px;
 }
 #row-C {
   display: flex;
   height: 25%;
   position: relative;
   top: 20px;
+  right: 28px;
+}
+.fiftysix {
+  position:relative;
+  right: 2px;
+}
+.fiftynine {
+  position: relative;
+  right: 4px;
+}
+.sixty {
+  position: relative;
+  right: 13px;
 }
 #row-D {
   display: flex;
@@ -71,30 +127,128 @@
   position: relative;
   top: 30px;
 }
+.seventyone {
+  font-size: 8px;
+}
+.seventysix {
+  position: relative;
+  right: 5px;
+}
+.seventyseven {
+  position: relative;
+  right: 5px;
+  font-size: 7px;
+}
+.seventyeight {
+  position: relative;
+  right: 7px;
+}
+.seventynine {
+  position: relative;
+  right: 7px;
+  font-size: 8px;
+}
+.eighty {
+  position: relative;
+  right: 6px;
+  font-size: 8px;
+}
+.eightyone {
+  position: relative;
+  right: 6px;
+}
 #row-G {
   display: flex;
   height: 25%;
+}
+.eightyfour {
+  font-size: 8px;
+}
+.ninetyone {
+  font-size: 8px;
+}
+.ninetytwo {
+  font-size: 7px;
+  position: relative;
+  right: 8px;
+}
+.michelle {
+  position: relative;
+  right: 8px;
 }
 #row-H {
   display: flex;
   height: 25%;
   position: relative;
-  top: 4px;
+  top: 5px;
+  left: 3px;
+}
+.kauffman {
+  position: relative;
+  left: 13px;
+}
+.ninetythree {
+  position: relative;
+  left: 12px;
+}
+.ninetyfour {
+  position: relative;
+  left: 12px;
+}
+.ninetyfive {
+  position: relative;
+  left: 12px;
+  font-size: 8px;
+}
+.ninetysix {
+  position: relative;
+  left: 7px;
+}
+.ninetyseven {
+  position: relative;
+  left: 7px;
+}
+.ninetyeight {
+  font-size: 7px;
+}
+.bakery {
+  position: relative;
+  right: 1px;
+}
+.wscafe {
+  position: relative;
+  right: 2px;
+}
+.westsidecafe {
+  position: relative;
+  right: 2px;
 }
 #row-I {
   display: flex;
   height: 25%;
   position: relative;
-  top: 30px;
+  top: 29px;
 }
-.booth {
-  flex-direction: row;
-  width: 4.6%;
-  height: 100%;
-  border: 1px solid black;
-  font-size: 9px;
-  font-family: arial;
-  padding: 2px;
+.onehundred {
+  position: relative;
+  left: 3px;
+}
+.onehundredone {
+  position: relative;
+  left: 4px;
+}
+.onehundredtwo {
+  position: relative;
+  left: 7px;
+}
+.onehundredthree {
+  font-size: 7px;
+}
+.onehundredfour {
+  font-size: 7px;
+}
+.onehundredsix {
+  font-size: 7px;
 }
 .lefty {
   border-right: none;
