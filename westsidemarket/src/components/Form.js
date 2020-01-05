@@ -22,7 +22,7 @@ class Form extends React.Component {
   componentDidMount(){
     this.setState({
       username: this.props.user,
-      vendorid: this.props.vendor.id
+      vendorid: this.props.vendor[0].id
     })
   }
   render(){

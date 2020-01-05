@@ -21,10 +21,11 @@ class Comment extends React.Component{
       show: false
     })
   }
-  show(){
+  show = () => {
     this.setState({
       show: !this.state.show
     })
+    console.log(this.state)
   }
   componentDidMount(){
     this.setState({
