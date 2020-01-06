@@ -507,6 +507,10 @@ body {
   position: relative;
   left: 465px;
 }
+#loginthings {
+  position: relative;
+  left: 16px;
+}
 .vendortitle {
   font-family: 'Walter Turncoat', cursive;
 }

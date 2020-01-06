@@ -23,13 +23,15 @@ class Login extends React.Component {
       <button id='login' onClick={()=>{this.show()}}>Log In</button>
       {
         this.state.show
-        ? <form onSubmit={()=>{this.props.setuser(this.state.username)}}>
+        ? <div id='loginthings'>
+          <form onSubmit={()=>{this.props.setuser(this.state.username)}}>
             <input type='text' id='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
             <br/>
             <input type='password' id='password' placeholder='Password' value={this.state.password} onChange={this.handleChange}/>
             <br/>
             <input id='submit' type='submit'/>
           </form>
+          </div>
         : null
       }
       </div>
