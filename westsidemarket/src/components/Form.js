@@ -29,7 +29,8 @@ class Form extends React.Component {
     return(
       <form onSubmit={this.handleSubmit}>
         <textarea id='content' className='commentbox' placeholder='Leave a comment...' value={this.state.content} onChange={this.handleChange}></textarea>
-        <input type='submit' value='Share'/>
+        <br/>
+        <input id='share' type='submit' value='Share'/>
       </form>
     )
   }

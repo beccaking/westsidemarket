@@ -5,28 +5,16 @@ import Form from './Form.js';
 class Vendor extends React.Component {
   constructor(props){
     super(props)
-    this.state = {
-      show: false
-    }
-  }
-  show(){
-    this.setState({
-      show: !this.state.show
-    })
   }
   render(){
-  let comments = this.props.comments.filter(comment => comment.vendorid === this.props.vendor.id)
+  let comments = this.props.comments.filter(comment => comment.vendorid === this.props.vendor[0].id)
     return(
-      <div key={this.props.index} className='vendor'>
-        <h2 className='vendortitle'><span onClick={()=>{this.show()}}>{this.props.vendor.name}</span>
-        </h2>
-        {
-          this.state.show
-          ? <div className ='vendorcontent'>
-              <img className='vendorimg' src={this.props.vendor.image} alt={this.props.vendor.image}/>
-              <h4>{this.props.vendor.description}</h4>
+      <div className='vendor'>
+        <h2 className='vendortitle'>{this.props.vendor[0].name}</h2>
+        <div className ='vendorcontent'>
+              <img className='vendorimg' src={this.props.vendor[0].image} alt={this.props.vendor[0].image}/>
+              <h4 id='description'>{this.props.vendor[0].description}</h4>
               <div className='commentsection'>
-                <h4 className='comments'>Notes</h4>
                 {
                   comments.map((comment, index) => (
                     <Comment user={this.props.user} comment={comment} key={index} handleDelete={this.props.handleDelete}handleUpdate={this.props.handleUpdate}/>
@@ -34,13 +22,11 @@ class Vendor extends React.Component {
                 }
                 {
                   this.props.user
-                  ? <Form user={this.props.user} vendor={this.props.vendor} handleCreate={this.props.handleCreate}/>
-                  : <span className='signindirect'>Sign in to leave a comment</span>
+                  ? <Form user={this.props.user} vendor={this.props.vendor[0]} handleCreate={this.props.handleCreate}/>
+                  : null
                 }
               </div>
             </div>
-          : null
-        }
       </div>
     )
   }

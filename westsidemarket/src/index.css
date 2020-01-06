@@ -1,26 +1,42 @@
+#heading {
+  color: black;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
+}
+#logo {
+  margin: 0 auto;
+}
+#intro {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 20px;
+}
+.lefty, .left {
+  z-index: 1;
+}
 #interactive {
   border: 3px solid black;
+  border-style: ridge;
   height: 600px;
   width: 1000px;
   margin: 10px auto;
+  background: white;
 }
 
 .station, .stand, .booth:hover {
   cursor: pointer;
 }
-
 #lorain {
-  z-index: 1;
   font-family: arial;
-  color: brown;
+  font-size: 13px;
+  color: black;
   position: relative;
-  bottom: 370px;
+  bottom: 375px;
   right: 15%;
 }
 #w25th {
-  z-index: 1;
   font-family: arial;
-  color: brown;
+  font-size: 13px;
+  color: black;
   position: relative;
   right: 47%;
   bottom: 500px;
@@ -34,6 +50,16 @@
   margin: 40px;
   position: relative;
   bottom: 320px;
+}
+.booth {
+  flex-direction: row;
+  width: 4.6%;
+  height: 100%;
+  border: 1px solid black;
+  font-size: 9px;
+  font-family: arial;
+  padding: 2px;
+  text-align: center;
 }
 #first-row {
   height: 33%;
@@ -53,13 +79,63 @@
   height: 25%;
   position: relative;
   top: 20px;
+  right: 12px;
   margin-bottom: 5px;
+}
+.fortyseven {
+  position: relative;
+  right: 3px;
+}
+.fortyeight {
+  position: relative;
+  right: 5px;
+}
+.fortynine {
+  position: relative;
+  right: 5px;
+}
+.fifty {
+  position: relative;
+  right: 15px;
+}
+.fiftyone {
+  position: relative;
+  right: 15px;
+}
+.fiftytwo {
+  position: relative;
+  right: 24px;
+}
+.fiftythree {
+  position: relative;
+  left: 1px;
+}
+.sebmeats {
+  position: relative;
+  right: 5px;
+}
+.maha {
+  position: relative;
+  right: 24px;
 }
 #row-C {
   display: flex;
   height: 25%;
   position: relative;
   top: 20px;
+  right: 28px;
+}
+.fiftysix {
+  position:relative;
+  right: 2px;
+}
+.fiftynine {
+  position: relative;
+  right: 4px;
+}
+.sixty {
+  position: relative;
+  right: 13px;
 }
 #row-D {
   display: flex;
@@ -73,30 +149,130 @@
   position: relative;
   top: 30px;
 }
+.seventyone {
+  font-size: 8px;
+}
+.seventysix {
+  position: relative;
+  right: 5px;
+}
+.seventyseven {
+  position: relative;
+  right: 5px;
+  font-size: 7px;
+}
+.seventyeight {
+  position: relative;
+  right: 7px;
+}
+.seventynine {
+  position: relative;
+  right: 7px;
+  font-size: 8px;
+}
+.eighty {
+  position: relative;
+  right: 6px;
+  font-size: 8px;
+}
+.eightyone {
+  position: relative;
+  right: 6px;
+}
 #row-G {
   display: flex;
   height: 25%;
+}
+.eightyfour {
+  font-size: 7px;
+}
+.ninetyone {
+  font-size: 8px;
+}
+.ninetytwo {
+  font-size: 7px;
+  position: relative;
+  right: 8px;
+}
+.michelle {
+  position: relative;
+  right: 8px;
 }
 #row-H {
   display: flex;
   height: 25%;
   position: relative;
-  top: 4px;
+  top: 5px;
+  left: 3px;
+}
+.kauffman {
+  position: relative;
+  left: 13px;
+}
+.ninetythree {
+  position: relative;
+  left: 12px;
+}
+.ninetyfour {
+  position: relative;
+  left: 12px;
+}
+.ninetyfive {
+  position: relative;
+  left: 12px;
+  font-size: 8px;
+}
+.ninetysix {
+  position: relative;
+  left: 7px;
+}
+.ninetyseven {
+  position: relative;
+  left: 7px;
+}
+.ninetyeight {
+  font-size: 6px;
+}
+.bakery {
+  position: relative;
+  right: 1px;
+}
+.wscafe {
+  position: relative;
+  right: 1px;
+}
+.westsidecafe {
+  position: relative;
+  left: 2px;
 }
 #row-I {
   display: flex;
   height: 25%;
   position: relative;
-  top: 30px;
+  top: 29px;
 }
-.booth {
-  flex-direction: row;
-  width: 4.6%;
-  height: 100%;
-  border: 1px solid black;
-  font-size: 9px;
-  font-family: arial;
-  padding: 2px;
+.onehundred {
+  position: relative;
+  left: 3px;
+}
+.onehundredone {
+  position: relative;
+  left: 4px;
+}
+.onehundredtwo {
+  position: relative;
+  left: 7px;
+}
+.onehundredthree {
+  font-size: 7px;
+}
+.onehundredfour {
+  font-size: 7px;
+}
+.onehundredsix {
+  font-size: 7px;
+  position: relative;
+  left: 2px;
 }
 .lefty {
   border-right: none;
@@ -178,17 +354,21 @@
 }
 #left-row {
   width: 44%;
-  height: 100%;
-  border: 1px solid black;
+  height: 100.5%;
   position: relative;
+  bottom: 0%;
 }
 #right-row {
   width: 44%;
-  height: 99.7%;
-  border: 1px solid black;
+  height: 100.3%;
   position: relative;
-  bottom: 101%;
-  left: 55%;
+  bottom: 100.8%;
+  left: 57%;
+}
+.thirtyfive {
+  position: relative;
+  bottom: 2px;
+  border-bottom: 3px solid black;
 }
 .stand {
   height: 8%;
@@ -210,13 +390,21 @@
 body {
   background: url('http://www.civicartsproject.com/wp-content/uploads/Ohio_City_Cleveland_Ohio_CAPAHZ0153.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.station, .stand, .booth {
+  background: #d4ac6e;
+  font-family: 'Public Sans', sans-serif;
 }
 
 #container {
   margin: 100px auto;
-  max-width: 1200px;
+  max-width: 1050px;
   text-align: center;
-  background: #F7F2E0;
+  background: rgb(212, 172, 110, 0.8);
+  padding-bottom: 220px;
+  border: 3px solid black;
 }
 
 .icon {
@@ -238,41 +426,121 @@ body {
 .comment {
   border: 1px solid black;
   padding: 10px;
+  margin-bottom: 10px;
   font-size: 15px;
   width: 880px;
+  background: white;
 }
 
 .commentbox {
   width: 880px;
   padding: 10px;
 }
-
+.username {
+  margin-right: 6px;
+  font-weight: bold;
+}
+#username {
+  position: relative;
+  left: 492px;
+  top: 5px;
+  z-index: 1;
+}
+#password {
+  position: relative;
+  left: 492px;
+  top: 5px;
+  z-index: 1;
+}
+#submit {
+  position: relative;
+  left: 454px;
+  top: 10px;
+  z-index: 1;
+}
+#share, #close, #change, #edit, #delete, #signup, #login, #submit, #logout {
+  background: #4f3222;
+  color: white;
+  padding: 5px;
+  border: outset;
+  font-family: 'Public Sans', sans-serif;
+  cursor: pointer;
+}
+#close {
+  position: absolute;
+  left: 48%;
+}
+#logout {
+  position: relative;
+  bottom: 15px;
+  left: -7px;
+}
 .name {
   font-weight: bold;
 }
-
+#logobox {
+  width: 100%;
+  display: flex;
+}
+#logo {
+  position: relative;
+  height: 90px;
+  top: 230px;
+  align-items: center;
+}
+#intro {
+  position: relative;
+  top: 15px;
+}
 .vendortitle:hover {
   cursor: pointer;
 }
-
-.signindirect {
-  font-style: italic;
-}
-
 .signuplogin {
   display: flex;
   flex-direction: row;
 }
-
-#signup, #login {
-  margin-right: 80px;
+#signup {
+  position: relative;
+  left: 455px;
 }
-
+#login {
+  position: relative;
+  left: 465px;
+}
+#loginthings {
+  position: relative;
+  left: 16px;
+}
+.vendortitle {
+  font-family: 'Walter Turncoat', cursive;
+}
 .vendorimg {
   width: 200px;
+  float: left;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
-
+#description {
+  width: 800px;
+  padding-top: 20px;
+  font-family: 'Walter Turncoat', cursive;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#footer {
+  position: relative;
+  bottom: -300px;
+  right: 44%;
+  color: white;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
