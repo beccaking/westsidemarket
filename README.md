@@ -2,7 +2,7 @@
 A informational site about the West Side Market (Cleveland, Ohio, est. 1912) including an interactive map. Users can click on each station to learn more about the vendor, favorite, and leave comments. (Front end repository) 
 
 ## Live Site
-[https://pensive-bhaskara-dd4f91.netlify.com/](My Marketplace: A Guide to the West Side Market)
+[My Marketplace: A Guide to the West Side Market](https://pensive-bhaskara-dd4f91.netlify.com/)
 
 ## Technologies Used
 * React.js (Javascript)
@@ -17,4 +17,4 @@ A informational site about the West Side Market (Cleveland, Ohio, est. 1912) inc
 Improve method for accessing user accounts, password authentication for greater security and functionality. 
 
 ## Notes
-[https://trello.com/b/3Mx3PDLv/west-side-market](Project Notes)
+[Project Notes](https://trello.com/b/3Mx3PDLv/west-side-market)
