@@ -18,3 +18,6 @@ Improve method for accessing user accounts, password authentication for greater 
 
 ## Notes
 [Project Notes](https://trello.com/b/3Mx3PDLv/west-side-market)
+
+## API Repository
+[West Side Market API](github.com/beccaking/westsidemarket_api)
