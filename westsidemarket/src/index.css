@@ -441,21 +441,21 @@ body {
   font-weight: bold;
 }
 #username {
-  position: absolute;
-  left: 515px;
-  top: 228px;
+  position: relative;
+  left: 492px;
+  top: 5px;
   z-index: 1;
 }
 #password {
-  position: absolute;
-  left: 515px;
-  top: 248px;
+  position: relative;
+  left: 492px;
+  top: 5px;
   z-index: 1;
 }
 #submit {
-  position: absolute;
-  left: 515px;
-  top: 270px;
+  position: relative;
+  left: 454px;
+  top: 10px;
   z-index: 1;
 }
 #share, #close, #change, #edit, #delete, #signup, #login, #submit, #logout {
@@ -472,8 +472,8 @@ body {
 }
 #logout {
   position: relative;
-  bottom: 62px;
-  left: 14px;
+  bottom: 15px;
+  left: -7px;
 }
 .name {
   font-weight: bold;
@@ -499,18 +499,13 @@ body {
   display: flex;
   flex-direction: row;
 }
-
-#signup, #login {
-  position: absolute;
-  bottom: 438px;
-}
 #signup {
-  position: absolute;
-  left: 570px;
+  position: relative;
+  left: 455px;
 }
 #login {
-  position: absolute;
-  left: 515px;
+  position: relative;
+  left: 465px;
 }
 .vendortitle {
   font-family: 'Walter Turncoat', cursive;
