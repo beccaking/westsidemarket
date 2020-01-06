@@ -12,7 +12,7 @@ class App extends React.Component {
       view: 'home',
       comments: [],
       vendors: [],
-      user: 'Becca',
+      user: null,
       vendor: [{}]
     }
   }
@@ -52,23 +52,11 @@ class App extends React.Component {
       })
     }).catch(error=> console.log(error))
   }
-  handleSignup = (userInfo) => {
-    fetch(`${baseUrl}/users`, {
-      body: JSON.stringify(userInfo),
-      method: 'POST',
-      headers: {
-        'Accept' : 'applications/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      }
-    }).then(created => {
-      return created.json()
-    }).then(jsonedUsername => {
-      this.setState({
-        user: jsonedUsername
-      })
-    }).catch(error => console.log(error))
-    console.log(this.state);
-  }
+setuser = (username) => {
+  this.setState({
+    user: username
+  })
+}
   handleCreate = (comment) => {
     console.log('comment inside handlecreate function', comment)
     fetch(`${baseUrl}/comments`, {
@@ -119,10 +107,22 @@ class App extends React.Component {
       vendor: [{}]
     })
   }
+  logout = ()=> {
+    this.setState({
+      user: null
+    })
+  }
   render(){
     return(
       <div id='container'>
         <h1 id='heading'>My Marketplace: A Guide to the West Side Market</h1>
+        {
+          this.state.user
+          ? <button onClick={()=>{this.logout()}} id='logout'>Log Out</button>
+          : <div className='signuplogin'>
+              <Signup setuser={this.setuser}/><Login setuser={this.setuser} />
+            </div>
+        }
         <img id='logo'src="https://img.icons8.com/doodle/48/000000/wicker-basket.png"/>
         <br/>
         <span id='intro'>Click on a vendor to see details and comments, or to leave a comment</span>
@@ -434,13 +434,6 @@ class App extends React.Component {
           <div id='w25th'>WEST 25TH</div>
           <span id='lorain'>LORAIN AVENUE</span>
         </div>
-        {
-          this.state.user
-          ? null
-          : <div className='signuplogin'>
-              <Signup handleSignup={this.handleSignup}/><Login />
-            </div>
-        }
         {
           this.state.vendor[0].name
           ? <div>

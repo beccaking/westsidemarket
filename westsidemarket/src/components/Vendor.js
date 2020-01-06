@@ -23,7 +23,7 @@ class Vendor extends React.Component {
                 {
                   this.props.user
                   ? <Form user={this.props.user} vendor={this.props.vendor[0]} handleCreate={this.props.handleCreate}/>
-                  : <span className='signindirect'>Sign in to leave a comment</span>
+                  : null
                 }
               </div>
             </div>

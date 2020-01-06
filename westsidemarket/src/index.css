@@ -403,7 +403,7 @@ body {
   max-width: 1050px;
   text-align: center;
   background: rgb(212, 172, 110, 0.8);
-  padding-bottom: 13px;
+  padding-bottom: 140px;
   border: 3px solid black;
 }
 
@@ -426,27 +426,51 @@ body {
 .comment {
   border: 1px solid black;
   padding: 10px;
+  margin-bottom: 10px;
   font-size: 15px;
   width: 880px;
+  background: white;
 }
 
 .commentbox {
   width: 880px;
   padding: 10px;
 }
-#share {
+.username {
+  margin-right: 6px;
+  font-weight: bold;
+}
+#username {
+  position: absolute;
+  left: 524px;
+  top: 220px;
+}
+#password {
+  position: absolute;
+  left: 524px;
+  top: 242px;
+}
+#submit {
+  position: absolute;
+  left: 524px;
+  top: 264px;
+}
+#share, #close, #change, #edit, #delete, #signup, #login, #submit, #logout {
   background: #4f3222;
   color: white;
   padding: 5px;
   border: outset;
   font-family: 'Public Sans', sans-serif;
+  cursor: pointer;
 }
 #close {
-  background: #4f3222;
-  color: white;
-  padding: 5px;
-  border: outset;
-  font-family: 'Public Sans', sans-serif;
+  position: absolute;
+  left: 48%;
+}
+#logout {
+  position: relative;
+  bottom: 62px;
+  left: 52px;
 }
 .name {
   font-weight: bold;
@@ -466,7 +490,17 @@ body {
 }
 
 #signup, #login {
-  margin-right: 80px;
+  position: absolute;
+  left: 470px;
+  bottom: 453px;
+}
+#signup {
+  position: absolute;
+  left: 585px;
+}
+#login {
+  position: absolute;
+  left: 525px;
 }
 .vendortitle {
   font-family: 'Walter Turncoat', cursive;
