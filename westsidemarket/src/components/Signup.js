@@ -23,7 +23,7 @@ class Signup extends React.Component {
       <button id='signup' onClick={()=>{this.show()}}>Sign Up</button>
       {
         this.state.show
-        ? <form onSubmit={()=>{this.props.setuser(this.state.username)}}>
+        ?<form onSubmit={()=>{this.props.setuser(this.state.username)}}>
             <input type='text' id='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
             <br/>
             <input type='text' id='password' placeholder='Password' value={this.state.password} onChange={this.handleChange}/>

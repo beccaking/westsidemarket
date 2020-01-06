@@ -123,7 +123,6 @@ setuser = (username) => {
               <Signup setuser={this.setuser}/><Login setuser={this.setuser} />
             </div>
         }
-        <img id='logo'src="https://img.icons8.com/doodle/48/000000/wicker-basket.png"/>
         <br/>
         <span id='intro'>Click on a vendor to see details and comments, or to leave a comment</span>
         <div id='interactive'>
@@ -442,6 +441,9 @@ setuser = (username) => {
             </div>
           : null
         }
+        <div id='logobox'>
+          <img id='logo'src="https://img.icons8.com/doodle/48/000000/wicker-basket.png"/>
+        </div>
         <div id='footer'>Site by <a href='github.com/beccaking'>Becca King</a></div>
       </div>
     )
