@@ -13,9 +13,8 @@ class Vendor extends React.Component {
         <h2 className='vendortitle'>{this.props.vendor[0].name}</h2>
         <div className ='vendorcontent'>
               <img className='vendorimg' src={this.props.vendor[0].image} alt={this.props.vendor[0].image}/>
-              <h4>{this.props.vendor[0].description}</h4>
+              <h4 id='description'>{this.props.vendor[0].description}</h4>
               <div className='commentsection'>
-                <h4 className='comments'>Notes</h4>
                 {
                   comments.map((comment, index) => (
                     <Comment user={this.props.user} comment={comment} key={index} handleDelete={this.props.handleDelete}handleUpdate={this.props.handleUpdate}/>

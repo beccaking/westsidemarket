@@ -123,6 +123,9 @@ class App extends React.Component {
     return(
       <div id='container'>
         <h1 id='heading'>My Marketplace: A Guide to the West Side Market</h1>
+        <img id='logo'src="https://img.icons8.com/doodle/48/000000/wicker-basket.png"/>
+        <br/>
+        <span id='intro'>Click on a vendor to see details and comments, or to leave a comment</span>
         <div id='interactive'>
           <div id='produce-north'>
             <div id='top-row'>
@@ -420,11 +423,11 @@ class App extends React.Component {
                 <div onClick={()=>{this.fetchVendor('onehundredfive')}}className='booth righty onehundredfive'></div>
                 <div className='door'></div>
                 <div onClick={()=>{this.fetchVendor('onehundredsix')}}className='booth onehundredsix'>Olive Cleveland</div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth lefty ninetyeight'></div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'>West Side Market Cafe</div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly ninetyeight'></div>
-                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth righty ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth lefty westsidecafe ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly westsidecafe ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly westsidecafe ninetyeight'>West Side Market Cafe</div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth middly westsidecafe ninetyeight'></div>
+                <div onClick={()=>{this.fetchVendor('ninetyeight')}}className='booth righty westsidecafe ninetyeight'></div>
               </div>
             </div>
           </div>
@@ -442,10 +445,11 @@ class App extends React.Component {
           this.state.vendor[0].name
           ? <div>
             <Vendor user={this.state.user} vendor={this.state.vendor} comments={this.state.comments} handleCreate={this.handleCreate} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate}/>
-            <button onClick={()=>{this.closeVendor()}}>Close</button>
+            <button id='close' onClick={()=>{this.closeVendor()}}>Close</button>
             </div>
           : null
         }
+        <div id='footer'>Site by <a href='github.com/beccaking'>Becca King</a></div>
       </div>
     )
   }

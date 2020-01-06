@@ -1,23 +1,34 @@
 #heading {
-
+  color: black;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
 }
-
+#logo {
+  margin: 0 auto;
+}
+#intro {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 20px;
+}
+.lefty, .left {
+  z-index: 1;
+}
 #interactive {
   border: 3px solid black;
+  border-style: ridge;
   height: 600px;
   width: 1000px;
   margin: 10px auto;
-  background: beige;
+  background: white;
 }
 
 .station, .stand, .booth:hover {
   cursor: pointer;
 }
-
 #lorain {
   font-family: arial;
   font-size: 13px;
-  color: brown;
+  color: black;
   position: relative;
   bottom: 375px;
   right: 15%;
@@ -25,7 +36,7 @@
 #w25th {
   font-family: arial;
   font-size: 13px;
-  color: brown;
+  color: black;
   position: relative;
   right: 47%;
   bottom: 500px;
@@ -33,7 +44,7 @@
 }
 
 #main-floor {
-  border: 3px solid black;
+  border: 2px solid black;
   height: 60%;
   width: 70%;
   margin: 40px;
@@ -94,6 +105,10 @@
 .fiftytwo {
   position: relative;
   right: 24px;
+}
+.fiftythree {
+  position: relative;
+  left: 1px;
 }
 .sebmeats {
   position: relative;
@@ -169,7 +184,7 @@
   height: 25%;
 }
 .eightyfour {
-  font-size: 8px;
+  font-size: 7px;
 }
 .ninetyone {
   font-size: 8px;
@@ -216,7 +231,7 @@
   left: 7px;
 }
 .ninetyeight {
-  font-size: 7px;
+  font-size: 6px;
 }
 .bakery {
   position: relative;
@@ -224,11 +239,11 @@
 }
 .wscafe {
   position: relative;
-  right: 2px;
+  right: 1px;
 }
 .westsidecafe {
   position: relative;
-  right: 2px;
+  left: 2px;
 }
 #row-I {
   display: flex;
@@ -256,6 +271,8 @@
 }
 .onehundredsix {
   font-size: 7px;
+  position: relative;
+  left: 2px;
 }
 .lefty {
   border-right: none;
@@ -275,7 +292,7 @@
 }
 
 #produce-north {
-  border: 3px solid black;
+  border: 2px solid black;
   width: 80%;
   height: 20%;
   position: relative;
@@ -328,7 +345,7 @@
 }
 
 #produce-east {
-  border: 3px solid black;
+  border: 2px solid black;
   width: 15%;
   height: 60%;
   position: relative;
@@ -337,17 +354,16 @@
 }
 #left-row {
   width: 44%;
-  height: 100%;
-  border: 1px solid black;
+  height: 100.5%;
   position: relative;
+  bottom: 0%;
 }
 #right-row {
   width: 44%;
-  height: 99.7%;
-  border: 1px solid black;
+  height: 100.3%;
   position: relative;
-  bottom: 101%;
-  left: 55%;
+  bottom: 100.8%;
+  left: 57%;
 }
 .thirtyfive {
   position: relative;
@@ -377,12 +393,16 @@ body {
   background-repeat: no-repeat;
   background-color: black;
 }
+.station, .stand, .booth {
+  background: #d4ac6e;
+  font-family: 'Public Sans', sans-serif;
+}
 
 #container {
   margin: 100px auto;
   max-width: 1050px;
   text-align: center;
-  background: rgb(245, 245, 220, 0.8);
+  background: rgb(212, 172, 110, 0.8);
   padding-bottom: 13px;
   border: 3px solid black;
 }
@@ -414,7 +434,20 @@ body {
   width: 880px;
   padding: 10px;
 }
-
+#share {
+  background: #4f3222;
+  color: white;
+  padding: 5px;
+  border: outset;
+  font-family: 'Public Sans', sans-serif;
+}
+#close {
+  background: #4f3222;
+  color: white;
+  padding: 5px;
+  border: outset;
+  font-family: 'Public Sans', sans-serif;
+}
 .name {
   font-weight: bold;
 }
@@ -435,12 +468,36 @@ body {
 #signup, #login {
   margin-right: 80px;
 }
-
+.vendortitle {
+  font-family: 'Walter Turncoat', cursive;
+}
 .vendorimg {
   width: 200px;
+  float: left;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
-
+#description {
+  width: 800px;
+  padding-top: 20px;
+  font-family: 'Walter Turncoat', cursive;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#footer {
+  position: relative;
+  bottom: -300px;
+  right: 44%;
+  color: white;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
